@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Code_for_C_imp"
+		},
+		{
+			"path": "../Adafruit_BNO08x-master"
+		},
+		{
+			"path": "../../../Downloads/Lab4-Final_Project"
+		}
+	],
+	"settings": {}
+}

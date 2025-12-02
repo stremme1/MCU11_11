@@ -1,0 +1,2061 @@
+***********************************************************************************************
+***                                                                                         ***
+***                                    LINK INFORMATION                                     ***
+***                                                                                         ***
+***********************************************************************************************
+
+Linker version:
+
+  SEGGER ARM Linker 4.44.2 compiled Apr 14 2025 16:05:48
+  Copyright (c) 2017-2024 SEGGER Microcontroller GmbH    www.segger.com
+
+
+***********************************************************************************************
+***                                                                                         ***
+***                                     MODULE SUMMARY                                      ***
+***                                                                                         ***
+***********************************************************************************************
+
+Memory use by input file:
+
+  Object File                                       RX Code     RO Data     RW Data     ZI Data
+  ---------------------------------------------  ----------  ----------  ----------  ----------
+  BNO085_SPI_HAL.o                                    4 588       1 445                      36
+  crash_sample.o                                                 44 108                        
+  drum_detection.o                                    1 780         371                      18
+  hihat_closed_sample.o                                          12 958                        
+  kick_sample.o                                                  15 222                        
+  main.o                                              4 006       2 794                     102
+  ride_sample.o                                                  32 194                        
+  SEGGER_THUMB_Startup.o                                 20                                    
+  sh2.o                                               2 568          82                     544
+  sh2_SensorValue.o                                   3 618                                    
+  sh2_util.o                                            104                                    
+  shtp.o                                              3 196          11                   2 613
+  snare_sample.o                                                  5 732                        
+  STM32L432KC_DAC.o                                   1 160                                    
+  STM32L432KC_FLASH.o                                    26                                    
+  STM32L432KC_RCC.o                                     682         349                        
+  STM32L432KC_RTT.o                                     160          17                        
+  STM32L432KC_TIMER.o                                    40                                    
+  stm32l432xx_Vectors.o                                 530                                    
+  STM32L4xx_Startup.o                                    64                                    
+  system_stm32l4xx.o                                    462          64           4            
+  tom_high_sample.o                                              28 278                        
+  tom_low_sample.o                                               35 288                        
+  ---------------------------------------------  ----------  ----------  ----------  ----------
+  Subtotal (23 objects)                              23 004     178 913           4       3 313
+  ---------------------------------------------  ----------  ----------  ----------  ----------
+  libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a
+                                                      3 440         136                        
+  mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a
+                                                        204         541          20           4
+  prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a
+                                                        486          26          12       1 220
+  SEGGER_crtinit_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a
+                                                         74                                    
+  strops_unaligned_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a
+                                                        390                                    
+  ---------------------------------------------  ----------  ----------  ----------  ----------
+  Subtotal (5 archives)                               4 594         703          32       1 224
+  ---------------------------------------------  ----------  ----------  ----------  ----------
+  Linker created (shared data, fills, blocks):                       72                   2 048
+  =============================================  ==========  ==========  ==========  ==========
+  Total:                                             27 598     179 688          36       6 585
+  =============================================  ==========  ==========  ==========  ==========
+
+Memory use by archive member:
+
+  Archive member                                    RX Code     RO Data     RW Data     ZI Data
+  ---------------------------------------------  ----------  ----------  ----------  ----------
+  __SEGGER_RTL_vfprintf_int_nwp.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+                                                        874                                    
+  fileops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+                                                         46                                    
+  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+                                                        580                                    
+  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+                                                      1 218         104                        
+  intasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+                                                        304                                    
+  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+                                                        204         541          20           4
+  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+                                                        418          32                        
+  prinops_rtt.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+                                                         66                      12          12
+  SEGGER_crtinit.o (SEGGER_crtinit_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+                                                         74                                    
+  SEGGER_RTT.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+                                                        420          26                   1 208
+  strasmops_arm.o (strops_unaligned_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+                                                        348                                    
+  strops.o (strops_unaligned_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+                                                         42                                    
+  ---------------------------------------------  ----------  ----------  ----------  ----------
+  Subtotal (12 members from 5 archives)               4 594         703          32       1 224
+  Objects (23 files)                                 23 004     178 913           4       3 313
+  Linker created (shared data, fills, blocks):                       72                   2 048
+  =============================================  ==========  ==========  ==========  ==========
+  Total:                                             27 598     179 688          36       6 585
+  =============================================  ==========  ==========  ==========  ==========
+
+Memory use by linker:
+
+  Description                                       RX Code     RO Data     RW Data     ZI Data
+  ---------------------------------------------  ----------  ----------  ----------  ----------
+  Initialization table                                               72                        
+  Memory for block 'stack'                                                                2 048
+  ---------------------------------------------  ----------  ----------  ----------  ----------
+  Subtotal (linker created):                                         72                   2 048
+  ---------------------------------------------  ----------  ----------  ----------  ----------
+  Objects (23 files)                                 23 004     178 913           4       3 313
+  Archives (5 files)                                  4 594         703          32       1 224
+  =============================================  ==========  ==========  ==========  ==========
+  Total:                                             27 598     179 688          36       6 585
+  =============================================  ==========  ==========  ==========  ==========
+
+
+***********************************************************************************************
+***                                                                                         ***
+***                                     SECTION DETAIL                                      ***
+***                                                                                         ***
+***********************************************************************************************
+
+Sections by address:
+
+  Range              Symbol or [section] Name         Size  Al  Init  Ac  Object File
+  -----------------  -------------------------  ----------  --  ----  --  -----------
+  08000000-0800018b  _vectors                          396  512
+                                                                Code  RX  stm32l432xx_Vectors.o
+  0800018c-0800018f  crash_sample_length                 4   4  Cnst  RO  crash_sample.o
+  08000190-0800038b  DrumDetection_QuaternionToEuler
+                                                       508   8  Code  RX  drum_detection.o
+  0800038c-080003e7  SystemInit                         92   4  Code  RX  system_stm32l4xx.o
+  080003e8-08000417  MSIRangeTable                      48   4  Cnst  RO  system_stm32l4xx.o
+  08000418-0800041f  BNO085_HardwareReset                8   4  Code  RX  BNO085_SPI_HAL.o
+  08000420-0800045f  hal_hardwareReset                  64   4  Code  RX  BNO085_SPI_HAL.o
+  08000460-0800046f  SysTick_Handler                    16   4  Code  RX  BNO085_SPI_HAL.o
+  08000470-0800056b  GPIO_Init                         252   4  Code  RX  BNO085_SPI_HAL.o
+  0800056c-08000593  spihal_open                        40   4  Code  RX  BNO085_SPI_HAL.o
+  08000594-0800059b  spihal_close                        8   4  Code  RX  BNO085_SPI_HAL.o
+  0800059c-0800128b  spihal_read                     3 312   4  Code  RX  BNO085_SPI_HAL.o
+  0800128c-080012a3  hal_getTimeUs                      24   4  Code  RX  BNO085_SPI_HAL.o
+  080012a4-080012fb  spihal_wait_for_int                88   4  Code  RX  BNO085_SPI_HAL.o
+  080012fc-080013c3  SPI1_Transfer                     200   4  Code  RX  BNO085_SPI_HAL.o
+  080013c4-080013c7  crash_sample_sample_rate            4   4  Cnst  RO  crash_sample.o
+  080013c8-0800140b  DrumDetection_NormalizeYaw
+                                                        68   4  Code  RX  drum_detection.o
+  0800140c-0800189b  DrumDetection_ProcessSensorData
+                                                     1 168   4  Code  RX  drum_detection.o
+  0800189c-0800189f  hihat_closed_sample_length
+                                                         4   4  Cnst  RO  hihat_closed_sample.o
+  080018a0-080018a3  hihat_closed_sample_sample_rate
+                                                         4   4  Cnst  RO  hihat_closed_sample.o
+  080018a4-080018a7  kick_sample_length                  4   4  Cnst  RO  kick_sample.o
+  080018a8-080018ab  kick_sample_sample_rate             4   4  Cnst  RO  kick_sample.o
+  080018ac-08001b4f  sensorHandler                     676   4  Code  RX  main.o
+  08001b50-08001cdf  PlayDrumSound                     400   4  Code  RX  main.o
+  08001ce0-08001d73  ProcessButton2                    148   4  Code  RX  main.o
+  08001d74-08001d93  [.rodata..L__const.PlayDrumSound.drumNames]
+                                                        32   4  Cnst  RO  main.o
+  08001d94-08001d97  ride_sample_length                  4   4  Cnst  RO  ride_sample.o
+  08001d98-08001d9b  ride_sample_sample_rate             4   4  Cnst  RO  ride_sample.o
+  08001d9c-08001e5f  setSensorConfigStart              196   4  Code  RX  sh2.o
+  08001e60-0800200f  sh2_open                          432   4  Code  RX  sh2.o
+  08002010-08002177  sensorhubControlHdlr              360   4  Code  RX  sh2.o
+  08002178-0800219b  sensorhubInputNormalHdlr           36   4  Code  RX  sh2.o
+  0800219c-080021bf  sensorhubInputWakeHdlr             36   4  Code  RX  sh2.o
+  080021c0-0800222f  executableDeviceHdlr              112   4  Code  RX  sh2.o
+  08002230-0800227b  sh2_setSensorConfig                76   4  Code  RX  sh2.o
+  0800227c-0800229b  sendCtrl                           32   4  Code  RX  sh2.o
+  0800229c-080022eb  opStart                            80   4  Code  RX  sh2.o
+  080022ec-080022f7  setSensorConfigOp                  12   4  Cnst  RO  sh2.o
+  080022f8-0800257f  sh2_decodeSensorEvent             648   4  Code  RX  sh2_SensorValue.o
+  08002580-080025ef  decodeAccelerometer               112   4  Code  RX  sh2_SensorValue.o
+  080025f0-0800265f  decodeLinearAcceleration          112   4  Code  RX  sh2_SensorValue.o
+  08002660-080026cf  decodeGravity                     112   4  Code  RX  sh2_SensorValue.o
+  080026d0-0800273f  decodeGyroscopeCalibrated         112   4  Code  RX  sh2_SensorValue.o
+  08002740-0800280b  decodeGyroscopeUncal              204   4  Code  RX  sh2_SensorValue.o
+  0800280c-0800287b  decodeMagneticFieldCalibrated
+                                                       112   4  Code  RX  sh2_SensorValue.o
+  0800287c-08002947  decodeMagneticFieldUncal          204   4  Code  RX  sh2_SensorValue.o
+  08002948-080029f7  decodeRotationVector              176   4  Code  RX  sh2_SensorValue.o
+  080029f8-08002a87  decodeGameRotationVector          144   4  Code  RX  sh2_SensorValue.o
+  08002a88-08002b37  decodeGeomagneticRotationVector
+                                                       176   4  Code  RX  sh2_SensorValue.o
+  08002b38-08002b67  decodePressure                     48   4  Code  RX  sh2_SensorValue.o
+  08002b68-08002b97  decodeAmbientLight                 48   4  Code  RX  sh2_SensorValue.o
+  08002b98-08002bc7  decodeHumidity                     48   4  Code  RX  sh2_SensorValue.o
+  08002bc8-08002bf7  decodeProximity                    48   4  Code  RX  sh2_SensorValue.o
+  08002bf8-08002c27  decodeTemperature                  48   4  Code  RX  sh2_SensorValue.o
+  08002c28-08002c57  decodeReserved                     48   4  Code  RX  sh2_SensorValue.o
+  08002c58-08002c6b  decodeTapDetector                  20   4  Code  RX  sh2_SensorValue.o
+  08002c6c-08002c7f  decodeStabilityClassifier          20   4  Code  RX  sh2_SensorValue.o
+  08002c80-08002c93  decodeSleepDetector                20   4  Code  RX  sh2_SensorValue.o
+  08002c94-08002d43  decodeArvrStabilizedRV            176   4  Code  RX  sh2_SensorValue.o
+  08002d44-08002dd3  decodeArvrStabilizedGRV           144   4  Code  RX  sh2_SensorValue.o
+  08002dd4-08002ec3  decodeGyroIntegratedRV            240   4  Code  RX  sh2_SensorValue.o
+  08002ec4-08002edf  decodeIZroRequest                  28   4  Code  RX  sh2_SensorValue.o
+  08002ee0-08002ef3  readu8                             20   4  Code  RX  sh2_util.o
+  08002ef4-08002f03  readu32                            16   4  Code  RX  sh2_util.o
+  08002f04-08002f13  read32                             16   4  Code  RX  sh2_util.o
+  08002f14-08002fcb  shtp_open                         184   4  Code  RX  shtp.o
+  08002fcc-08002feb  shtp_init                          32   4  Code  RX  shtp.o
+  08002fec-08003033  getInstance                        72   4  Code  RX  shtp.o
+  08003034-0800306b  shtp_listenAdvert                  56   4  Code  RX  shtp.o
+  0800306c-08003087  shtp_setEventCallback              28   4  Code  RX  shtp.o
+  08003088-080030fb  addChanListener                   116   4  Code  RX  shtp.o
+  080030fc-0800314f  addAdvertListener                  84   4  Code  RX  shtp.o
+  08003150-08003203  shtp_chanNo                       180   4  Code  RX  shtp.o
+  08003204-08003267  shtp_send                         100   4  Code  RX  shtp.o
+  08003268-080032d3  shtp_service                      108   4  Code  RX  shtp.o
+  080032d4-08003507  processAdvertisement              564   4  Code  RX  shtp.o
+  08003508-0800357b  callAdvertHandler                 116   4  Code  RX  shtp.o
+  0800357c-080035d7  setAppName                         92   4  Code  RX  shtp.o
+  080035d8-08003607  min_u16                            48   4  Code  RX  shtp.o
+  08003608-0800360b  snare_sample_length                 4   4  Cnst  RO  snare_sample.o
+  0800360c-0800360f  snare_sample_sample_rate            4   4  Cnst  RO  snare_sample.o
+  08003610-08003637  DAC_EnableClock                    40   4  Code  RX  STM32L432KC_DAC.o
+  08003638-08003787  DAC_Init                          336   4  Code  RX  STM32L432KC_DAC.o
+  08003788-08003847  DAC_SetValue                      192   4  Code  RX  STM32L432KC_DAC.o
+  08003848-0800390f  DAC_InitAudio                     200   4  Code  RX  STM32L432KC_DAC.o
+  08003910-08003a77  configurePLL                      360   4  Code  RX  STM32L432KC_RCC.o
+  08003a78-08003a93  RTT_PrintChar                      28   4  Code  RX  STM32L432KC_RTT.o
+  08003a94-08003aaf  RTT_PrintStr                       28   4  Code  RX  STM32L432KC_RTT.o
+  08003ab0-08003ac7  RTT_PrintInt                       24   4  Code  RX  STM32L432KC_RTT.o
+  08003ac8-08003ad7  RTT_PrintNewline                   16   4  Code  RX  STM32L432KC_RTT.o
+  08003ad8-08003aff  ms_delay                           40   4  Code  RX  STM32L432KC_TIMER.o
+  08003b00-08003b03  tom_high_sample_length              4   4  Cnst  RO  tom_high_sample.o
+  08003b04-08003b07  tom_high_sample_sample_rate
+                                                         4   4  Cnst  RO  tom_high_sample.o
+  08003b08-08003b0b  tom_low_sample_length               4   4  Cnst  RO  tom_low_sample.o
+  08003b0c-08003b0f  tom_low_sample_sample_rate
+                                                         4   4  Cnst  RO  tom_low_sample.o
+  08003b10-08003b23  _start                             20   4  Code  RX  SEGGER_THUMB_Startup.o
+  08003b24-08003b4b  HardFault_Handler                  40   4  Code  RX  STM32L4xx_Startup.o
+  08003b4c-08003c5f  fmodf                             276   4  Code  RX  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  08003c60-08003d53  atanf                             244   4  Code  RX  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  08003d54-08003e93  atan2f                            320   4  Code  RX  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  08003e94-08003f97  __SEGGER_RTL_float32_asinacos_fpu
+                                                       260   4  Code  RX  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  08003f98-08003fcf  __SEGGER_RTL_float32_ASinACos
+                                                        56   4  Cnst  RO  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  08003fd0-08003fff  __SEGGER_RTL_float32_ATan          48   4  Cnst  RO  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  08004000-080041c3  __aeabi_ddiv                      452   4  Code  RX  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  080041c4-080041f7  __aeabi_f2d                        52   4  Code  RX  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  080041f8-08004243  __aeabi_d2f                        76   4  Code  RX  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  08004244-08004373  __aeabi_uldivmod                  304   4  Code  RX  intasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  08004374-080043db  strcmp                            104   4  Code  RX  strasmops_arm.o (strops_unaligned_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  080043dc-0800440b  strcpy                             48   4  Code  RX  strasmops_arm.o (strops_unaligned_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0800440c-08004467  memcpy                             92   4  Code  RX  strasmops_arm.o (strops_unaligned_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  08004468-080044cf  __aeabi_memclr                    104   4  Code  RX  strasmops_arm.o (strops_unaligned_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  080044d0-080044db  __SEGGER_RTL_c_locale              12   4  Cnst  RO  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  080044dc-080044fb  __SEGGER_RTL_codeset_ascii
+                                                        32   4  Cnst  RO  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  080044fc-08004553  __SEGGER_RTL_c_locale_data
+                                                        88   4  Cnst  RO  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  08004554-080046c5  SystemCoreClockUpdate             370   4  Code  RX  system_stm32l4xx.o
+  080046c6-0800795b  hihat_closed_sample_data       12 950   2  Cnst  RO  hihat_closed_sample.o
+  0800795c-080079c1  BNO085_SPI_HAL_Init               102   4  Code  RX  BNO085_SPI_HAL.o
+  080079c2-0800b52f  kick_sample_data               15 214   2  Cnst  RO  kick_sample.o
+  0800b530-0800b569  SysTick_Init_ms                    58   4  Code  RX  BNO085_SPI_HAL.o
+  0800b56a-08013323  ride_sample_data               32 186   2  Cnst  RO  ride_sample.o
+  08013324-0801346d  SPI1_Init                         330   4  Code  RX  BNO085_SPI_HAL.o
+  0801346e-0801a2db  tom_high_sample_data           28 270   2  Cnst  RO  tom_high_sample.o
+  0801a2dc-0801a331  spihal_write                       86   4  Code  RX  BNO085_SPI_HAL.o
+  0801a332-0801a333  NMI_Handler                         2   2  Code  RX  stm32l432xx_Vectors.o
+  0801a334-0801a349  DrumDetection_SetYawOffset
+                                                        22   4  Code  RX  drum_detection.o
+  0801a34a-0801a34b  MemManage_Handler                   2   2  Code  RX  stm32l432xx_Vectors.o
+  0801a34c-0801a359  DrumDetection_Init                 14   4  Code  RX  drum_detection.o
+  0801a35a-0801a35b  BusFault_Handler                    2   2  Code  RX  stm32l432xx_Vectors.o
+  0801a35c-0801ad11  main                            2 486   4  Code  RX  main.o
+  0801ad12-0801ad13  UsageFault_Handler                  2   2  Code  RX  stm32l432xx_Vectors.o
+  0801ad14-0801ad75  Buttons_Init                       98   4  Code  RX  main.o
+  0801ad76-0801ad77  SVC_Handler                         2   2  Code  RX  stm32l432xx_Vectors.o
+  0801ad78-0801ae11  ProcessButton1                    154   4  Code  RX  main.o
+  0801ae12-0801ae13  DebugMon_Handler                    2   2  Code  RX  stm32l432xx_Vectors.o
+  0801ae14-0801ae25  get_millis                         18   4  Code  RX  main.o
+  0801ae26-0801ae27  PendSV_Handler                      2   2  Code  RX  stm32l432xx_Vectors.o
+  0801ae28-0801ae41  Button_Read                        26   4  Code  RX  main.o
+  0801ae42-0801ae43  WWDG_IRQHandler                     2   2  Code  RX  stm32l432xx_Vectors.o
+  0801ae44-0801ae89  shtpEventCallback                  70   4  Code  RX  sh2.o
+  0801ae8a-0801ae8b  PVD_PVM_IRQHandler                  2   2  Code  RX  stm32l432xx_Vectors.o
+  0801ae8c-0801af59  sensorhubAdvertHdlr               206   4  Code  RX  sh2.o
+  0801af5a-0801af5b  TAMP_STAMP_IRQHandler               2   2  Code  RX  stm32l432xx_Vectors.o
+  0801af5c-0801afe9  sensorhubInputGyroRvHdlr          142   4  Code  RX  sh2.o
+  0801afea-0801afeb  RTC_WKUP_IRQHandler                 2   2  Code  RX  stm32l432xx_Vectors.o
+  0801afec-0801affd  executableAdvertHdlr               18   4  Code  RX  sh2.o
+  0801affe-0801afff  FLASH_IRQHandler                    2   2  Code  RX  stm32l432xx_Vectors.o
+  0801b000-0801b019  sh2_service                        26   4  Code  RX  sh2.o
+  0801b01a-0801b01b  RCC_IRQHandler                      2   2  Code  RX  stm32l432xx_Vectors.o
+  0801b01c-0801b041  sh2_setSensorCallback              38   4  Code  RX  sh2.o
+  0801b042-0801b043  EXTI0_IRQHandler                    2   2  Code  RX  stm32l432xx_Vectors.o
+  0801b044-0801b0e9  opProcess                         166   4  Code  RX  sh2.o
+  0801b0ea-0801b0eb  EXTI1_IRQHandler                    2   2  Code  RX  stm32l432xx_Vectors.o
+  0801b0ec-0801b105  opCompleted                        26   4  Code  RX  sh2.o
+  0801b106-0801b107  EXTI2_IRQHandler                    2   2  Code  RX  stm32l432xx_Vectors.o
+  0801b108-0801b139  opRx                               50   4  Code  RX  sh2.o
+  0801b13a-0801b13b  EXTI3_IRQHandler                    2   2  Code  RX  stm32l432xx_Vectors.o
+  0801b13c-0801b259  sensorhubInputHdlr                286   4  Code  RX  sh2.o
+  0801b25a-0801b25b  EXTI4_IRQHandler                    2   2  Code  RX  stm32l432xx_Vectors.o
+  0801b25c-0801b2a5  getReportLen                       74   4  Code  RX  sh2.o
+  0801b2a6-0801b2a7  DMA1_Channel1_IRQHandler            2   2  Code  RX  stm32l432xx_Vectors.o
+  0801b2a8-0801b311  touSTimestamp                     106   4  Code  RX  sh2.o
+  0801b312-0801b313  DMA1_Channel2_IRQHandler            2   2  Code  RX  stm32l432xx_Vectors.o
+  0801b314-0801b351  decodeRawAccelerometer             62   4  Code  RX  sh2_SensorValue.o
+  0801b352-0801b353  DMA1_Channel3_IRQHandler            2   2  Code  RX  stm32l432xx_Vectors.o
+  0801b354-0801b39d  decodeRawGyroscope                 74   4  Code  RX  sh2_SensorValue.o
+  0801b39e-0801b39f  DMA1_Channel4_IRQHandler            2   2  Code  RX  stm32l432xx_Vectors.o
+  0801b3a0-0801b3dd  decodeRawMagnetometer              62   4  Code  RX  sh2_SensorValue.o
+  0801b3de-0801b3df  DMA1_Channel5_IRQHandler            2   2  Code  RX  stm32l432xx_Vectors.o
+  0801b3e0-0801b3f9  decodeStepDetector                 26   4  Code  RX  sh2_SensorValue.o
+  0801b3fa-0801b3fb  DMA1_Channel6_IRQHandler            2   2  Code  RX  stm32l432xx_Vectors.o
+  0801b3fc-0801b421  decodeStepCounter                  38   4  Code  RX  sh2_SensorValue.o
+  0801b422-0801b423  DMA1_Channel7_IRQHandler            2   2  Code  RX  stm32l432xx_Vectors.o
+  0801b424-0801b43d  decodeSignificantMotion            26   4  Code  RX  sh2_SensorValue.o
+  0801b43e-0801b43f  ADC1_IRQHandler                     2   2  Code  RX  stm32l432xx_Vectors.o
+  0801b440-0801b459  decodeShakeDetector                26   4  Code  RX  sh2_SensorValue.o
+  0801b45a-0801b45b  CAN1_TX_IRQHandler                  2   2  Code  RX  stm32l432xx_Vectors.o
+  0801b45c-0801b475  decodeFlipDetector                 26   4  Code  RX  sh2_SensorValue.o
+  0801b476-0801b477  CAN1_RX0_IRQHandler                 2   2  Code  RX  stm32l432xx_Vectors.o
+  0801b478-0801b491  decodePickupDetector               26   4  Code  RX  sh2_SensorValue.o
+  0801b492-0801b493  CAN1_RX1_IRQHandler                 2   2  Code  RX  stm32l432xx_Vectors.o
+  0801b494-0801b4ad  decodeStabilityDetector            26   4  Code  RX  sh2_SensorValue.o
+  0801b4ae-0801b4af  CAN1_SCE_IRQHandler                 2   2  Code  RX  stm32l432xx_Vectors.o
+  0801b4b0-0801b4f9  decodePersonalActivityClassifier
+                                                        74   4  Code  RX  sh2_SensorValue.o
+  0801b4fa-0801b4fb  EXTI9_5_IRQHandler                  2   2  Code  RX  stm32l432xx_Vectors.o
+  0801b4fc-0801b515  decodeTiltDetector                 26   4  Code  RX  sh2_SensorValue.o
+  0801b516-0801b517  TIM1_BRK_TIM15_IRQHandler           2   2  Code  RX  stm32l432xx_Vectors.o
+  0801b518-0801b531  decodePocketDetector               26   4  Code  RX  sh2_SensorValue.o
+  0801b532-0801b533  TIM1_UP_TIM16_IRQHandler            2   2  Code  RX  stm32l432xx_Vectors.o
+  0801b534-0801b54d  decodeCircleDetector               26   4  Code  RX  sh2_SensorValue.o
+  0801b54e-0801b54f  TIM1_TRG_COM_IRQHandler             2   2  Code  RX  stm32l432xx_Vectors.o
+  0801b550-0801b569  decodeHeartRateMonitor             26   4  Code  RX  sh2_SensorValue.o
+  0801b56a-0801b56b  TIM1_CC_IRQHandler                  2   2  Code  RX  stm32l432xx_Vectors.o
+  0801b56c-0801b585  readu16                            26   4  Code  RX  sh2_util.o
+  0801b586-0801b587  TIM2_IRQHandler                     2   2  Code  RX  stm32l432xx_Vectors.o
+  0801b588-0801b5a1  read16                             26   4  Code  RX  sh2_util.o
+  0801b5a2-0801b5a3  I2C1_EV_IRQHandler                  2   2  Code  RX  stm32l432xx_Vectors.o
+  0801b5a4-0801b629  addApp                            134   4  Code  RX  shtp.o
+  0801b62a-0801b62b  I2C1_ER_IRQHandler                  2   2  Code  RX  stm32l432xx_Vectors.o
+  0801b62c-0801b699  addChannel                        110   4  Code  RX  shtp.o
+  0801b69a-0801b69b  SPI1_IRQHandler                     2   2  Code  RX  stm32l432xx_Vectors.o
+  0801b69c-0801b6d1  shtpAdvertHdlr                     54   4  Code  RX  shtp.o
+  0801b6d2-0801b6d3  USART1_IRQHandler                   2   2  Code  RX  stm32l432xx_Vectors.o
+  0801b6d4-0801b71d  shtp_listenChan                    74   4  Code  RX  shtp.o
+  0801b71e-0801b71f  USART2_IRQHandler                   2   2  Code  RX  stm32l432xx_Vectors.o
+  0801b720-0801b75d  shtpCmdListener                    62   4  Code  RX  shtp.o
+  0801b75e-0801b75f  EXTI15_10_IRQHandler                2   2  Code  RX  stm32l432xx_Vectors.o
+  0801b760-0801b875  txProcess                         278   4  Code  RX  shtp.o
+  0801b876-0801b877  RTC_Alarm_IRQHandler                2   2  Code  RX  stm32l432xx_Vectors.o
+  0801b878-0801ba59  rxAssemble                        482   4  Code  RX  shtp.o
+  0801ba5a-0801ba5b  SPI3_IRQHandler                     2   2  Code  RX  stm32l432xx_Vectors.o
+  0801ba5c-0801bb39  updateCallbacks                   222   4  Code  RX  shtp.o
+  0801bb3a-0801bb3b  TIM6_DAC_IRQHandler                 2   2  Code  RX  stm32l432xx_Vectors.o
+  0801bb3c-0801bc0d  DAC_ConfigureGPIO                 210   4  Code  RX  STM32L432KC_DAC.o
+  0801bc0e-0801bc0f  TIM7_IRQHandler                     2   2  Code  RX  stm32l432xx_Vectors.o
+  0801bc10-0801bcc5  DAC_PlayWAV                       182   4  Code  RX  STM32L432KC_DAC.o
+  0801bcc6-0801bcc7  DMA2_Channel1_IRQHandler            2   2  Code  RX  stm32l432xx_Vectors.o
+  0801bcc8-0801bce1  configureFlash                     26   4  Code  RX  STM32L432KC_FLASH.o
+  0801bce2-0801bce3  DMA2_Channel2_IRQHandler            2   2  Code  RX  stm32l432xx_Vectors.o
+  0801bce4-0801be25  configureClock                    322   4  Code  RX  STM32L432KC_RCC.o
+  0801be26-0801be27  DMA2_Channel3_IRQHandler            2   2  Code  RX  stm32l432xx_Vectors.o
+  0801be28-0801be29  RTT_Init                            2   4  Code  RX  STM32L432KC_RTT.o
+  0801be2a-0801be2b  DMA2_Channel4_IRQHandler            2   2  Code  RX  stm32l432xx_Vectors.o
+  0801be2c-0801be69  RTT_PrintFloat                     62   4  Code  RX  STM32L432KC_RTT.o
+  0801be6a-0801be6b  DMA2_Channel5_IRQHandler            2   2  Code  RX  stm32l432xx_Vectors.o
+  0801be6c-0801c1d5  __SEGGER_RTL_vfprintf_int_nwp
+                                                       874   4  Code  RX  __SEGGER_RTL_vfprintf_int_nwp.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0801c1d6-0801c1d7  COMP_IRQHandler                     2   2  Code  RX  stm32l432xx_Vectors.o
+  0801c1d8-0801c1d9  LPTIM1_IRQHandler                   2   2  Code  RX  stm32l432xx_Vectors.o
+  0801c1da-0801c1db  LPTIM2_IRQHandler                   2   2  Code  RX  stm32l432xx_Vectors.o
+  0801c1dc-0801c1dd  USB_IRQHandler                      2   2  Code  RX  stm32l432xx_Vectors.o
+  0801c1de-0801c1df  DMA2_Channel6_IRQHandler            2   2  Code  RX  stm32l432xx_Vectors.o
+  0801c1e0-0801c1e1  DMA2_Channel7_IRQHandler            2   2  Code  RX  stm32l432xx_Vectors.o
+  0801c1e2-0801c1e3  LPUART1_IRQHandler                  2   2  Code  RX  stm32l432xx_Vectors.o
+  0801c1e4-0801c1e5  QUADSPI_IRQHandler                  2   2  Code  RX  stm32l432xx_Vectors.o
+  0801c1e6-0801c1e7  I2C3_EV_IRQHandler                  2   2  Code  RX  stm32l432xx_Vectors.o
+  0801c1e8-0801c1e9  I2C3_ER_IRQHandler                  2   2  Code  RX  stm32l432xx_Vectors.o
+  0801c1ea-0801c1eb  SAI1_IRQHandler                     2   2  Code  RX  stm32l432xx_Vectors.o
+  0801c1ec-0801c1ed  SWPMI1_IRQHandler                   2   2  Code  RX  stm32l432xx_Vectors.o
+  0801c1ee-0801c1ef  TSC_IRQHandler                      2   2  Code  RX  stm32l432xx_Vectors.o
+  0801c1f0-0801c1f1  RNG_IRQHandler                      2   2  Code  RX  stm32l432xx_Vectors.o
+  0801c1f2-0801c1f3  FPU_IRQHandler                      2   2  Code  RX  stm32l432xx_Vectors.o
+  0801c1f4-0801c1f5  CRS_IRQHandler                      2   2  Code  RX  stm32l432xx_Vectors.o
+  0801c1f6-0801c223  fwrite                             46   2  Code  RX  fileops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0801c224-0801c229  asinf                               6   2  Code  RX  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0801c22a-0801c22f  sqrtf                               6   2  Code  RX  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0801c230-0801c261  __SEGGER_RTL_float32_PolyEvalQ
+                                                        50   2  Code  RX  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0801c262-0801c27b  __SEGGER_RTL_prin_flush            26   2  Code  RX  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0801c27c-0801c285  __SEGGER_RTL_stream_write          10   2  Code  RX  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0801c286-0801c2af  printf                             42   2  Code  RX  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0801c2b0-0801c2b5  __SEGGER_RTL_X_file_write           6   2  Code  RX  prinops_rtt.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0801c2b6-0801c2cb  _GetAvailWriteSpace                22   2  Code  RX  SEGGER_RTT.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0801c2cc-0801c321  _WriteBlocking                     86   2  Code  RX  SEGGER_RTT.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0801c322-0801c37b  SEGGER_RTT_WriteNoLock             90   2  Code  RX  SEGGER_RTT.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0801c37c-0801c3b1  SEGGER_RTT_Write                   54   2  Code  RX  SEGGER_RTT.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0801c3b2-0801c3db  strlen                             42   2  Code  RX  strops.o (strops_unaligned_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0801c3dc-0801c40d  __SEGGER_RTL_ascii_mbtowc          50   2  Code  RX  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0801c40e-0801c41b  __SEGGER_RTL_ascii_wctomb          14   2  Code  RX  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0801c41c-0801c429  __SEGGER_RTL_ascii_tolower
+                                                        14   2  Code  RX  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0801c42a-0801c437  __SEGGER_RTL_ascii_towlower
+                                                        14   2  Code  RX  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0801c438-0802707b  crash_sample_data              44 100   2  Cnst  RO  crash_sample.o
+  0802707c-080286d7  snare_sample_data               5 724   2  Cnst  RO  snare_sample.o
+  080286d8-080310a7  tom_low_sample_data            35 280   2  Cnst  RO  tom_low_sample.o
+  080310a8-080310bf  reset_handler                      24   2  Code  RX  STM32L4xx_Startup.o
+  080310c0-080310f7  __SEGGER_RTL_float32_PolyEvalP
+                                                        56   2  Code  RX  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  080310f8-0803117b  __SEGGER_RTL_putc                 132   2  Code  RX  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0803117c-08031193  __SEGGER_RTL_init_prin             24   2  Code  RX  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  08031194-080311c3  snprintf                           48   2  Code  RX  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  080311c4-080311df  vfprintf                           28   2  Code  RX  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  080311e0-0803124b  vfprintf_l                        108   2  Code  RX  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0803124c-08031283  __SEGGER_RTL_X_file_stat           56   2  Code  RX  prinops_rtt.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  08031284-08031287  __SEGGER_RTL_X_file_bufsize
+                                                         4   2  Code  RX  prinops_rtt.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  08031288-080312eb  _DoInit                           100   2  Code  RX  SEGGER_RTT.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  080312ec-0803132f  _WriteNoCheck                      68   2  Code  RX  SEGGER_RTT.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  08031330-08031347  __SEGGER_RTL_current_locale
+                                                        24   2  Code  RX  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  08031348-08031367  __SEGGER_RTL_ascii_isctype
+                                                        32   2  Code  RX  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  08031368-08031373  __SEGGER_RTL_ascii_toupper
+                                                        12   2  Code  RX  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  08031374-08031393  __SEGGER_RTL_ascii_iswctype
+                                                        32   2  Code  RX  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  08031394-0803139f  __SEGGER_RTL_ascii_towupper
+                                                        12   2  Code  RX  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  080313a0-080313d2  [.rodata..L.str.11]                51   1  Cnst  RO  BNO085_SPI_HAL.o
+  080313d3-080313d9  [.rodata..L.str.13]                 7   1  Cnst  RO  BNO085_SPI_HAL.o
+  080313da-080313e0  [.rodata..L.str.14]                 7   1  Cnst  RO  BNO085_SPI_HAL.o
+  080313e1-080313e7  [.rodata..L.str.15]                 7   1  Cnst  RO  BNO085_SPI_HAL.o
+  080313e8-0803140a  [.rodata..L.str.21]                35   1  Cnst  RO  BNO085_SPI_HAL.o
+  0803140b-08031411  [.rodata..L.str.24]                 7   1  Cnst  RO  BNO085_SPI_HAL.o
+  08031412-08031418  [.rodata..L.str.25]                 7   1  Cnst  RO  BNO085_SPI_HAL.o
+  08031419-0803142f  [.rodata..L.str.28]                23   1  Cnst  RO  BNO085_SPI_HAL.o
+  08031430-08031446  [.rodata..L.str.36]                23   1  Cnst  RO  BNO085_SPI_HAL.o
+  08031447-0803148d  [.rodata..L.str.43]                71   1  Cnst  RO  BNO085_SPI_HAL.o
+  0803148e-08031498  [.rodata..L.str.48]                11   1  Cnst  RO  BNO085_SPI_HAL.o
+  08031499-080314a3  [.rodata..L.str.52]                11   1  Cnst  RO  BNO085_SPI_HAL.o
+  080314a4-080314aa  [.rodata..L.str.54]                 7   1  Cnst  RO  BNO085_SPI_HAL.o
+  080314ab-080314ad  [.rodata..L.str.2]                  3   1  Cnst  RO  drum_detection.o
+  080314ae-080314c0  [.rodata..L.str.17]                19   1  Cnst  RO  drum_detection.o
+  080314c1-080314e7  [.rodata..L.str]                   39   1  Cnst  RO  main.o
+  080314e8-080314fa  [.rodata..L.str.5]                 19   1  Cnst  RO  main.o
+  080314fb-08031519  [.rodata..L.str.10]                31   1  Cnst  RO  main.o
+  0803151a-08031534  [.rodata..L.str.11]                27   1  Cnst  RO  main.o
+  08031535-08031553  [.rodata..L.str.12]                31   1  Cnst  RO  main.o
+  08031554-0803156e  [.rodata..L.str.13]                27   1  Cnst  RO  main.o
+  0803156f-080315a1  [.rodata..L.str.35]                51   1  Cnst  RO  main.o
+  080315a2-080315ac  [.rodata..L.str.36]                11   1  Cnst  RO  main.o
+  080315ad-080315b3  [.rodata..L.str.38]                 7   1  Cnst  RO  main.o
+  080315b4-080315ce  [.rodata..L.str.40]                27   1  Cnst  RO  main.o
+  080315cf-080315ed  [.rodata..L.str.57]                31   1  Cnst  RO  main.o
+  080315ee-08031608  [.rodata..L.str.59]                27   1  Cnst  RO  main.o
+  08031609-08031637  [.rodata..L.str.66]                47   1  Cnst  RO  main.o
+  08031638-0803165a  [.rodata..L.str.70]                35   1  Cnst  RO  main.o
+  0803165b-08031689  [.rodata..L.str.71]                47   1  Cnst  RO  main.o
+  0803168a-08031698  [.rodata..L.str.75]                15   1  Cnst  RO  main.o
+  08031699-080316a3  [.rodata..L.str.90]                11   1  Cnst  RO  main.o
+  080316a4-080316aa  [.rodata..L.str.4]                  7   1  Cnst  RO  sh2.o
+  080316ab-080316b5  [.rodata..L.str.5]                 11   1  Cnst  RO  sh2.o
+  080316b6-080316d4  [.rodata..L.str.2]                 31   1  Cnst  RO  STM32L432KC_RCC.o
+  080316d5-080316e3  [.rodata..L.str.4]                 15   1  Cnst  RO  STM32L432KC_RCC.o
+  080316e4-08031706  [.rodata..L.str.5]                 35   1  Cnst  RO  STM32L432KC_RCC.o
+  08031707-08031721  [.rodata..L.str.6]                 27   1  Cnst  RO  STM32L432KC_RCC.o
+  08031722-08031744  [.rodata..L.str.10]                35   1  Cnst  RO  STM32L432KC_RCC.o
+  08031745-08031763  [.rodata..L.str.12]                31   1  Cnst  RO  STM32L432KC_RCC.o
+  08031764-08031766  [.rodata..L.str]                    3   1  Cnst  RO  STM32L432KC_RTT.o
+  08031767-08031769  [.rodata..L.str.1]                  3   1  Cnst  RO  STM32L432KC_RTT.o
+  0803176a-08031770  [.rodata..L.str.3]                  7   1  Cnst  RO  STM32L432KC_RTT.o
+  08031771-080317c7  __SEGGER_RTL_c_locale_month_names
+                                                        87   1  Cnst  RO  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  080317c8-080317ce  __SEGGER_RTL_c_locale_am_pm_indicator
+                                                         7   1  Cnst  RO  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  080317cf-080317dd  __SEGGER_RTL_c_locale_date_time_format
+                                                        15   1  Cnst  RO  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  080317de-080317ef  [.rodata..L.str]                   18   1  Cnst  RO  BNO085_SPI_HAL.o
+  080317f0-08031809  [.rodata..L.str.7]                 26   1  Cnst  RO  BNO085_SPI_HAL.o
+  0803180a-0803180b  [.rodata..L.str.9]                  2   1  Cnst  RO  BNO085_SPI_HAL.o
+  0803180c-08031821  [.rodata..L.str.12]                22   1  Cnst  RO  BNO085_SPI_HAL.o
+  08031822-08031843  [.rodata..L.str.19]                34   1  Cnst  RO  BNO085_SPI_HAL.o
+  08031844-08031859  [.rodata..L.str.26]                22   1  Cnst  RO  BNO085_SPI_HAL.o
+  0803185a-0803186f  [.rodata..L.str.29]                22   1  Cnst  RO  BNO085_SPI_HAL.o
+  08031870-08031885  [.rodata..L.str.31]                22   1  Cnst  RO  BNO085_SPI_HAL.o
+  08031886-0803189b  [.rodata..L.str.33]                22   1  Cnst  RO  BNO085_SPI_HAL.o
+  0803189c-080318b9  [.rodata..L.str.35]                30   1  Cnst  RO  BNO085_SPI_HAL.o
+  080318ba-080318cf  [.rodata..L.str.47]                22   1  Cnst  RO  BNO085_SPI_HAL.o
+  080318d0-08031901  [.rodata..L.str.49]                50   1  Cnst  RO  BNO085_SPI_HAL.o
+  08031902-0803191f  [.rodata..L.str.5]                 30   1  Cnst  RO  drum_detection.o
+  08031920-0803192d  [.rodata..L.str.6]                 14   1  Cnst  RO  drum_detection.o
+  0803192e-08031937  [.rodata..L.str.7]                 10   1  Cnst  RO  drum_detection.o
+  08031938-08031955  [.rodata..L.str.13]                30   1  Cnst  RO  drum_detection.o
+  08031956-08031977  [.rodata..L.str.14]                34   1  Cnst  RO  drum_detection.o
+  08031978-08031995  [.rodata..L.str.15]                30   1  Cnst  RO  drum_detection.o
+  08031996-080319b7  [.rodata..L.str.16]                34   1  Cnst  RO  drum_detection.o
+  080319b8-080319b9  [.rodata..L.str.18]                 2   1  Cnst  RO  drum_detection.o
+  080319ba-080319cf  [.rodata..L.str.1]                 22   1  Cnst  RO  main.o
+  080319d0-080319e5  [.rodata..L.str.3]                 22   1  Cnst  RO  main.o
+  080319e6-08031a03  [.rodata..L.str.17]                30   1  Cnst  RO  main.o
+  08031a04-08031a41  [.rodata..L.str.19]                62   1  Cnst  RO  main.o
+  08031a42-08031a6f  [.rodata..L.str.20]                46   1  Cnst  RO  main.o
+  08031a70-08031aa9  [.rodata..L.str.21]                58   1  Cnst  RO  main.o
+  08031aaa-08031abf  [.rodata..L.str.26]                22   1  Cnst  RO  main.o
+  08031ac0-08031b05  [.rodata..L.str.27]                70   1  Cnst  RO  main.o
+  08031b06-08031b3f  [.rodata..L.str.43]                58   1  Cnst  RO  main.o
+  08031b40-08031b61  [.rodata..L.str.44]                34   1  Cnst  RO  main.o
+  08031b62-08031b67  [.rodata..L.str.54]                 6   1  Cnst  RO  main.o
+  08031b68-08031ba1  [.rodata..L.str.61]                58   1  Cnst  RO  main.o
+  08031ba2-08031bbb  [.rodata..L.str.62]                26   1  Cnst  RO  main.o
+  08031bbc-08031bfd  [.rodata..L.str.63]                66   1  Cnst  RO  main.o
+  08031bfe-08031c1f  [.rodata..L.str.69]                34   1  Cnst  RO  main.o
+  08031c20-08031c49  [.rodata..L.str.72]                42   1  Cnst  RO  main.o
+  08031c4a-08031c5f  [.rodata..L.str.73]                22   1  Cnst  RO  main.o
+  08031c60-08031c65  [.rodata..L.str.87]                 6   1  Cnst  RO  main.o
+  08031c66-08031c6f  [.rodata..L.str.91]                10   1  Cnst  RO  main.o
+  08031c70-08031c75  [.rodata..L.str.92]                 6   1  Cnst  RO  main.o
+  08031c76-08031c7b  [.rodata..L.str.93]                 6   1  Cnst  RO  main.o
+  08031c7c-08031c81  [.rodata..L.str.94]                 6   1  Cnst  RO  main.o
+  08031c82-08031c87  [.rodata..L.str.98]                 6   1  Cnst  RO  main.o
+  08031c88-08031c91  [.rodata..L.str.101]               10   1  Cnst  RO  main.o
+  08031c92-08031ca3  [.rodata..L.str.102]               18   1  Cnst  RO  main.o
+  08031ca4-08031cad  [.rodata..L.str.2]                 10   1  Cnst  RO  sh2.o
+  08031cae-08031cb7  [.rodata..L.str.6]                 10   1  Cnst  RO  sh2.o
+  08031cb8-08031cb9  advertise                           2   1  Cnst  RO  shtp.o
+  08031cba-08031cd7  [.rodata..L.str.11]                30   1  Cnst  RO  STM32L432KC_RCC.o
+  08031cd8-08031d11  __SEGGER_RTL_c_locale_day_names
+                                                        58   1  Cnst  RO  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  08031d12-08031d13  [.rodata.libc..L.str]               2   1  Cnst  RO  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  08031d14-08031d15  __SEGGER_RTL_data_utf8_period
+                                                         2   1  Cnst  RO  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  08031d16-08031d1a  [.rodata..L.str.2]                  5   1  Cnst  RO  BNO085_SPI_HAL.o
+  08031d1b-08031d23  [.rodata..L.str.4]                  9   1  Cnst  RO  BNO085_SPI_HAL.o
+  08031d24-08031d2c  [.rodata..L.str.8]                  9   1  Cnst  RO  BNO085_SPI_HAL.o
+  08031d2d-08031d3d  [.rodata..L__const.spihal_read.hex_chars]
+                                                        17   1  Cnst  RO  BNO085_SPI_HAL.o
+  08031d3e-08031d6e  [.rodata..L.str.16]                49   1  Cnst  RO  BNO085_SPI_HAL.o
+  08031d6f-08031d8f  [.rodata..L.str.22]                33   1  Cnst  RO  BNO085_SPI_HAL.o
+  08031d90-08031da0  [.rodata..L__const.spihal_read.hex_chars.23]
+                                                        17   1  Cnst  RO  BNO085_SPI_HAL.o
+  08031da1-08031db1  [.rodata..L__const.spihal_read.hex_chars.27]
+                                                        17   1  Cnst  RO  BNO085_SPI_HAL.o
+  08031db2-08031dc2  [.rodata..L__const.spihal_read.hex_chars.30]
+                                                        17   1  Cnst  RO  BNO085_SPI_HAL.o
+  08031dc3-08031dd3  [.rodata..L__const.spihal_read.hex_chars.32]
+                                                        17   1  Cnst  RO  BNO085_SPI_HAL.o
+  08031dd4-08031de4  [.rodata..L__const.spihal_read.hex_chars.34]
+                                                        17   1  Cnst  RO  BNO085_SPI_HAL.o
+  08031de5-08031df5  [.rodata..L__const.spihal_read.hex_chars.37]
+                                                        17   1  Cnst  RO  BNO085_SPI_HAL.o
+  08031df6-08031e16  [.rodata..L.str.39]                33   1  Cnst  RO  BNO085_SPI_HAL.o
+  08031e17-08031e3f  [.rodata..L.str.45]                41   1  Cnst  RO  BNO085_SPI_HAL.o
+  08031e40-08031e6c  [.rodata..L.str.46]                45   1  Cnst  RO  BNO085_SPI_HAL.o
+  08031e6d-08031e7d  [.rodata..L__const.spihal_read.hex_chars.55]
+                                                        17   1  Cnst  RO  BNO085_SPI_HAL.o
+  08031e7e-08031e9e  [.rodata..L.str.56]                33   1  Cnst  RO  BNO085_SPI_HAL.o
+  08031e9f-08031ebb  [.rodata..L.str.57]                29   1  Cnst  RO  BNO085_SPI_HAL.o
+  08031ebc-08031ed0  [.rodata..L.str]                   21   1  Cnst  RO  drum_detection.o
+  08031ed1-08031ed9  [.rodata..L.str.3]                  9   1  Cnst  RO  drum_detection.o
+  08031eda-08031ee2  [.rodata..L.str.8]                  9   1  Cnst  RO  drum_detection.o
+  08031ee3-08031ee7  [.rodata..L.str.9]                  5   1  Cnst  RO  drum_detection.o
+  08031ee8-08031f00  [.rodata..L.str.10]                25   1  Cnst  RO  drum_detection.o
+  08031f01-08031f11  [.rodata..L.str.2]                 17   1  Cnst  RO  main.o
+  08031f12-08031f22  [.rodata..L.str.4]                 17   1  Cnst  RO  main.o
+  08031f23-08031f3f  [.rodata..L.str.14]                29   1  Cnst  RO  main.o
+  08031f40-08031f6c  [.rodata..L.str.16]                45   1  Cnst  RO  main.o
+  08031f6d-08031f79  [.rodata..L.str.23]                13   1  Cnst  RO  main.o
+  08031f7a-08031f86  [.rodata..L.str.25]                13   1  Cnst  RO  main.o
+  08031f87-08031fcf  [.rodata..L.str.28]                73   1  Cnst  RO  main.o
+  08031fd0-08032008  [.rodata..L.str.29]                57   1  Cnst  RO  main.o
+  08032009-08032015  [.rodata..L.str.31]                13   1  Cnst  RO  main.o
+  08032016-0803201a  [.rodata..L.str.32]                 5   1  Cnst  RO  main.o
+  0803201b-08032023  [.rodata..L.str.33]                 9   1  Cnst  RO  main.o
+  08032024-0803203c  [.rodata..L.str.34]                25   1  Cnst  RO  main.o
+  0803203d-08032041  [.rodata..L.str.39]                 5   1  Cnst  RO  main.o
+  08032042-08032062  [.rodata..L.str.41]                33   1  Cnst  RO  main.o
+  08032063-080320a7  [.rodata..L.str.42]                69   1  Cnst  RO  main.o
+  080320a8-080320dc  [.rodata..L.str.45]                53   1  Cnst  RO  main.o
+  080320dd-080320e1  [.rodata..L.str.49]                 5   1  Cnst  RO  main.o
+  080320e2-08032122  [.rodata..L.str.51]                65   1  Cnst  RO  main.o
+  08032123-0803216f  [.rodata..L.str.52]                77   1  Cnst  RO  main.o
+  08032170-08032180  [.rodata..L.str.53]                17   1  Cnst  RO  main.o
+  08032181-08032199  [.rodata..L.str.65]                25   1  Cnst  RO  main.o
+  0803219a-080321ae  [.rodata..L.str.67]                21   1  Cnst  RO  main.o
+  080321af-080321c3  [.rodata..L.str.74]                21   1  Cnst  RO  main.o
+  080321c4-080321cc  [.rodata..L.str.79]                 9   1  Cnst  RO  main.o
+  080321cd-080321d9  [.rodata..L.str.82]                13   1  Cnst  RO  main.o
+  080321da-080321de  [.rodata..L.str.83]                 5   1  Cnst  RO  main.o
+  080321df-080321e3  [.rodata..L.str.84]                 5   1  Cnst  RO  main.o
+  080321e4-080321ec  [.rodata..L.str.85]                 9   1  Cnst  RO  main.o
+  080321ed-080321f1  [.rodata..L.str.88]                 5   1  Cnst  RO  main.o
+  080321f2-080321f6  [.rodata..L.str.89]                 5   1  Cnst  RO  main.o
+  080321f7-080321fb  [.rodata..L.str.95]                 5   1  Cnst  RO  main.o
+  080321fc-08032204  [.rodata..L.str.96]                 9   1  Cnst  RO  main.o
+  08032205-08032209  [.rodata..L.str.99]                 5   1  Cnst  RO  main.o
+  0803220a-0803220a  [.rodata..L.str.1]                  1   1  Cnst  RO  shtp.o
+  0803220b-0803221f  [.rodata..L.str]                   21   1  Cnst  RO  STM32L432KC_RCC.o
+  08032220-08032230  [.rodata..L.str.1]                 17   1  Cnst  RO  STM32L432KC_RCC.o
+  08032231-0803224d  [.rodata..L.str.3]                 29   1  Cnst  RO  STM32L432KC_RCC.o
+  0803224e-0803225a  [.rodata..L.str.7]                 13   1  Cnst  RO  STM32L432KC_RCC.o
+  0803225b-0803226b  [.rodata..L.str.9]                 17   1  Cnst  RO  STM32L432KC_RCC.o
+  0803226c-0803227c  _DoInit._aInitStr                  17   1  Cnst  RO  SEGGER_RTT.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0803227d-08032285  [.rodata.libc..L.str]               9   1  Cnst  RO  SEGGER_RTT.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  08032286-0803228e  __SEGGER_RTL_c_locale_date_format
+                                                         9   1  Cnst  RO  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0803228f-08032297  __SEGGER_RTL_c_locale_time_format
+                                                         9   1  Cnst  RO  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  08032298-080322b4  __SEGGER_RTL_c_locale_abbrev_day_names
+                                                        29   1  Cnst  RO  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  080322b5-080322e5  __SEGGER_RTL_c_locale_abbrev_month_names
+                                                        49   1  Cnst  RO  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  080322e6-080322e6  __SEGGER_RTL_data_empty_string
+                                                         1   1  Cnst  RO  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  080322e7-080322f3  __SEGGER_RTL_ascii_ctype_mask
+                                                        13   1  Cnst  RO  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  080322f4-080322f7  [.init_array]                       4   4  ----  --  STM32L4xx_Startup.o
+  080322f8-08032307  AHBPrescTable                      16   1  Cnst  RO  system_stm32l4xx.o
+  08032308-0803230f  [.rodata..L.str.1]                  8   1  Cnst  RO  BNO085_SPI_HAL.o
+  08032310-08032313  [.rodata..L.str.3]                  4   1  Cnst  RO  BNO085_SPI_HAL.o
+  08032314-08032317  [.rodata..L.str.5]                  4   1  Cnst  RO  BNO085_SPI_HAL.o
+  08032318-08032323  [.rodata..L.str.6]                 12   1  Cnst  RO  BNO085_SPI_HAL.o
+  08032324-0803233f  [.rodata..L.str.10]                28   1  Cnst  RO  BNO085_SPI_HAL.o
+  08032340-0803236f  [.rodata..L.str.17]                48   1  Cnst  RO  BNO085_SPI_HAL.o
+  08032370-08032377  [.rodata..L.str.18]                 8   1  Cnst  RO  BNO085_SPI_HAL.o
+  08032378-0803239f  [.rodata..L.str.20]                40   1  Cnst  RO  BNO085_SPI_HAL.o
+  080323a0-080323d3  [.rodata..L.str.38]                52   1  Cnst  RO  BNO085_SPI_HAL.o
+  080323d4-080323e3  [.rodata..L.str.40]                16   1  Cnst  RO  BNO085_SPI_HAL.o
+  080323e4-080323f3  [.rodata..L.str.41]                16   1  Cnst  RO  BNO085_SPI_HAL.o
+  080323f4-08032407  [.rodata..L.str.42]                20   1  Cnst  RO  BNO085_SPI_HAL.o
+  08032408-08032443  [.rodata..L.str.44]                60   1  Cnst  RO  BNO085_SPI_HAL.o
+  08032444-08032473  [.rodata..L.str.50]                48   1  Cnst  RO  BNO085_SPI_HAL.o
+  08032474-08032487  [.rodata..L.str.51]                20   1  Cnst  RO  BNO085_SPI_HAL.o
+  08032488-0803249b  [.rodata..L.str.53]                20   1  Cnst  RO  BNO085_SPI_HAL.o
+  0803249c-080324bb  [.rodata..L.str.58]                32   1  Cnst  RO  BNO085_SPI_HAL.o
+  080324bc-080324cf  [.rodata..L.str.59]                20   1  Cnst  RO  BNO085_SPI_HAL.o
+  080324d0-080324d7  [.rodata..L.str.60]                 8   1  Cnst  RO  BNO085_SPI_HAL.o
+  080324d8-080324e3  [.rodata..L.str.1]                 12   1  Cnst  RO  drum_detection.o
+  080324e4-080324eb  [.rodata..L.str.4]                  8   1  Cnst  RO  drum_detection.o
+  080324ec-0803250f  [.rodata..L.str.11]                36   1  Cnst  RO  drum_detection.o
+  08032510-08032537  [.rodata..L.str.12]                40   1  Cnst  RO  drum_detection.o
+  08032538-0803254b  [.rodata..L.str.6]                 20   1  Cnst  RO  main.o
+  0803254c-0803255b  [.rodata..L.str.7]                 16   1  Cnst  RO  main.o
+  0803255c-08032573  [.rodata..L.str.8]                 24   1  Cnst  RO  main.o
+  08032574-08032587  [.rodata..L.str.9]                 20   1  Cnst  RO  main.o
+  08032588-0803259f  [.rodata..L.str.15]                24   1  Cnst  RO  main.o
+  080325a0-080325b7  [.rodata..L.str.18]                24   1  Cnst  RO  main.o
+  080325b8-080325d3  [.rodata..L.str.22]                28   1  Cnst  RO  main.o
+  080325d4-080325e3  [.rodata..L.str.24]                16   1  Cnst  RO  main.o
+  080325e4-08032633  [.rodata..L.str.30]                80   1  Cnst  RO  main.o
+  08032634-0803263f  [.rodata..L.str.37]                12   1  Cnst  RO  main.o
+  08032640-0803267b  [.rodata..L.str.46]                60   1  Cnst  RO  main.o
+  0803267c-080326cf  [.rodata..L.str.47]                84   1  Cnst  RO  main.o
+  080326d0-080326e7  [.rodata..L.str.48]                24   1  Cnst  RO  main.o
+  080326e8-080326eb  [.rodata..L.str.50]                 4   1  Cnst  RO  main.o
+  080326ec-0803270f  [.rodata..L.str.55]                36   1  Cnst  RO  main.o
+  08032710-0803271f  [.rodata..L.str.56]                16   1  Cnst  RO  main.o
+  08032720-08032753  [.rodata..L.str.58]                52   1  Cnst  RO  main.o
+  08032754-08032777  [.rodata..L.str.60]                36   1  Cnst  RO  main.o
+  08032778-08032797  [.rodata..L.str.64]                32   1  Cnst  RO  main.o
+  08032798-080327c3  [.rodata..L.str.68]                44   1  Cnst  RO  main.o
+  080327c4-080327c7  [.rodata..L.str.76]                 4   1  Cnst  RO  main.o
+  080327c8-080327cb  [.rodata..L.str.77]                 4   1  Cnst  RO  main.o
+  080327cc-080327cf  [.rodata..L.str.78]                 4   1  Cnst  RO  main.o
+  080327d0-080327d3  [.rodata..L.str.80]                 4   1  Cnst  RO  main.o
+  080327d4-080327d7  [.rodata..L.str.81]                 4   1  Cnst  RO  main.o
+  080327d8-080327df  [.rodata..L.str.86]                 8   1  Cnst  RO  main.o
+  080327e0-080327e7  [.rodata..L.str.97]                 8   1  Cnst  RO  main.o
+  080327e8-080327ef  [.rodata..L.str.100]                8   1  Cnst  RO  main.o
+  080327f0-08032807  [.rodata..L.str.103]               24   1  Cnst  RO  main.o
+  08032808-0803282b  [.rodata..L.str.104]               36   1  Cnst  RO  main.o
+  0803282c-08032833  [.rodata..L.str]                    8   1  Cnst  RO  sh2.o
+  08032834-0803283f  [.rodata..L.str.1]                 12   1  Cnst  RO  sh2.o
+  08032840-0803284b  [.rodata..L.str.3]                 12   1  Cnst  RO  sh2.o
+  0803284c-08032853  [.rodata..L.str]                    8   1  Cnst  RO  shtp.o
+  08032854-0803286b  [.rodata..L.str.8]                 24   1  Cnst  RO  STM32L432KC_RCC.o
+  0803286c-08032883  [.rodata..L.str.13]                24   1  Cnst  RO  STM32L432KC_RCC.o
+  08032884-08032887  [.rodata..L.str.2]                  4   1  Cnst  RO  STM32L432KC_RTT.o
+  08032888-08032897  __SEGGER_RTL_hex_uc                16   1  Cnst  RO  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  08032898-080328a7  __SEGGER_RTL_hex_lc                16   1  Cnst  RO  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  080328a8-08032927  __SEGGER_RTL_ascii_ctype_map
+                                                       128   1  Cnst  RO  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  08032928-0803294b  __SEGGER_init_ctors                36   4  Code  RX  SEGGER_crtinit.o (SEGGER_crtinit_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0803294c-0803296f  __SEGGER_init_table__              36   4  Cnst  RO  [ Linker created ]
+  08032970-08032993  __SEGGER_init_data__               36   4  Cnst  RO  [ Linker created ]
+  08032994-080329a5  __SEGGER_init_zero                 18   2  Code  RX  SEGGER_crtinit.o (SEGGER_crtinit_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  080329a6-080329b9  __SEGGER_init_copy                 20   2  Code  RX  SEGGER_crtinit.o (SEGGER_crtinit_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  080329ba-0fffffff  ( UNUSED .=.+134010438 )   134 010 438
+                                                             -  ----  -   -
+  10000000-1000002f  sensorValue                        48   8  Zero  ZI  main.o
+  10000030-10000a63  instances                       2 612   4  Zero  ZI  shtp.o
+  10000a64-10000c5f  _sh2                              508   4  Zero  ZI  sh2.o
+  10000c60-10000d07  _SEGGER_RTT                       168   4  Zero  ZI  SEGGER_RTT.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  10000d08-10000d23  sh2AsyncEvent                      28   4  Zero  ZI  sh2.o
+  10000d24-10000d37  hal                                20   4  Zero  ZI  main.o
+  10000d38-10000d4b  g_hal                              20   4  Zero  ZI  BNO085_SPI_HAL.o
+  10000d4c-10000d4f  yawOffset                           4   4  Zero  ZI  drum_detection.o
+  10000d50-10000d53  touSTimestamp.rollovers             4   4  Zero  ZI  sh2.o
+  10000d54-10000d57  touSTimestamp.lastHostInt           4   4  Zero  ZI  sh2.o
+  10000d58-10000d5b  systick_ms_counter                  4   4  Zero  ZI  BNO085_SPI_HAL.o
+  10000d5c-10000d5f  spihal_read.read_call_count
+                                                         4   4  Zero  ZI  BNO085_SPI_HAL.o
+  10000d60-10000d63  spihal_read.last_debug_time
+                                                         4   4  Zero  ZI  BNO085_SPI_HAL.o
+  10000d64-10000d67  spihal_read.int_detected_count
+                                                         4   4  Zero  ZI  BNO085_SPI_HAL.o
+  10000d68-10000d6b  sensorHandler.sensor_data_count
+                                                         4   4  Zero  ZI  main.o
+  10000d6c-10000d6f  main.sh2_service_count              4   4  Zero  ZI  main.o
+  10000d70-10000d73  main.sensor_debug_count             4   4  Zero  ZI  main.o
+  10000d74-10000d77  main.loop_count                     4   4  Zero  ZI  main.o
+  10000d78-10000d7b  __SEGGER_RTL_stdout_file            4   4  Zero  ZI  prinops_rtt.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  10000d7c-10000d7f  __SEGGER_RTL_stdin_file             4   4  Zero  ZI  prinops_rtt.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  10000d80-10000d83  __SEGGER_RTL_stderr_file            4   4  Zero  ZI  prinops_rtt.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  10000d84-10000d87  __SEGGER_RTL_locale_ptr             4   4  Zero  ZI  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  10000d88-10000d8b  lastDebounceTime2                   4   4  Zero  ZI  main.o
+  10000d8c-10000d8f  lastDebounceTime1                   4   4  Zero  ZI  main.o
+  10000d90-10000d93  get_millis.ms_counter               4   4  Zero  ZI  main.o
+  10000d94-10000d97  DrumDetection_ProcessSensorData.last_yaw
+                                                         4   4  Zero  ZI  drum_detection.o
+  10000d98-10000d9b  DrumDetection_ProcessSensorData.last_pitch
+                                                         4   4  Zero  ZI  drum_detection.o
+  10000d9c-10000d9f  DrumDetection_ProcessSensorData.gyro_debug_count
+                                                         4   4  Zero  ZI  drum_detection.o
+  10000da0-10000da1  DrumDetection_ProcessSensorData.last_gyro_y
+                                                         2   2  Zero  ZI  drum_detection.o
+  10000da2-100011a1  _acUpBuffer                     1 024   1  Zero  ZI  SEGGER_RTT.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  100011a2-100011b1  _acDownBuffer                      16   1  Zero  ZI  SEGGER_RTT.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  100011b2-100011b4  drumState                           3   1  Zero  ZI  main.o
+  100011b5-100011b5  shtp_initialized                    1   1  Zero  ZI  shtp.o
+  100011b6-100011b6  newSensorData                       1   1  Zero  ZI  main.o
+  100011b7-100011b7  buttonPrinted2                      1   1  Zero  ZI  main.o
+  100011b8-100011b8  buttonPrinted1                      1   1  Zero  ZI  main.o
+  100011b9-100011bb  ( UNUSED .=.+3 )                    3   -  ----  -   -
+  100011bc-100011cf  __SEGGER_RTL_global_locale
+                                                        20   4  Init  RW  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  100011d0-100011d3  stdout                              4   4  Init  RW  prinops_rtt.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  100011d4-100011d7  stdin                               4   4  Init  RW  prinops_rtt.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  100011d8-100011db  stderr                              4   4  Init  RW  prinops_rtt.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  100011dc-100011df  SystemCoreClock                     4   4  Init  RW  system_stm32l4xx.o
+  100011e0-2000b7ff  ( UNUSED .=.+268477984 )   268 477 984
+                                                             -  ----  -   -
+  2000b800-2000bfff  [.bss.block.stack]              2 048   8  None  ZI  [ Linker created ]
+
+
+***********************************************************************************************
+***                                                                                         ***
+***                                       SYMBOL LIST                                       ***
+***                                                                                         ***
+***********************************************************************************************
+
+Function symbols by name:
+
+  Symbol name                   Address        Size  Align  Type  Bd  Object File
+  -------------------------  ----------  ----------  -----  ----  --  -----------
+  ADC1_IRQHandler            0x0801B43F                  2  Code  Wk  stm32l432xx_Vectors.o
+  BNO085_HardwareReset       0x08000419           8      4  Code  Gb  BNO085_SPI_HAL.o
+  BNO085_SPI_HAL_Init        0x0800795D         102      4  Code  Gb  BNO085_SPI_HAL.o
+  BusFault_Handler           0x0801A35B                  2  Code  Wk  stm32l432xx_Vectors.o
+  Button_Read                0x0801AE29          26      4  Code  Lc  main.o
+  Buttons_Init               0x0801AD15          98      4  Code  Lc  main.o
+  CAN1_RX0_IRQHandler        0x0801B477                  2  Code  Wk  stm32l432xx_Vectors.o
+  CAN1_RX1_IRQHandler        0x0801B493                  2  Code  Wk  stm32l432xx_Vectors.o
+  CAN1_SCE_IRQHandler        0x0801B4AF                  2  Code  Wk  stm32l432xx_Vectors.o
+  CAN1_TX_IRQHandler         0x0801B45B                  2  Code  Wk  stm32l432xx_Vectors.o
+  COMP_IRQHandler            0x0801C1D7                  2  Code  Wk  stm32l432xx_Vectors.o
+  CRS_IRQHandler             0x0801C1F5                  2  Code  Wk  stm32l432xx_Vectors.o
+  DAC_ConfigureGPIO          0x0801BB3D         210      4  Code  Gb  STM32L432KC_DAC.o
+  DAC_EnableClock            0x08003611          40      4  Code  Gb  STM32L432KC_DAC.o
+  DAC_Init                   0x08003639         336      4  Code  Gb  STM32L432KC_DAC.o
+  DAC_InitAudio              0x08003849         200      4  Code  Gb  STM32L432KC_DAC.o
+  DAC_PlayWAV                0x0801BC11         182      4  Code  Gb  STM32L432KC_DAC.o
+  DAC_SetValue               0x08003789         192      4  Code  Gb  STM32L432KC_DAC.o
+  DMA1_Channel1_IRQHandler   0x0801B2A7                  2  Code  Wk  stm32l432xx_Vectors.o
+  DMA1_Channel2_IRQHandler   0x0801B313                  2  Code  Wk  stm32l432xx_Vectors.o
+  DMA1_Channel3_IRQHandler   0x0801B353                  2  Code  Wk  stm32l432xx_Vectors.o
+  DMA1_Channel4_IRQHandler   0x0801B39F                  2  Code  Wk  stm32l432xx_Vectors.o
+  DMA1_Channel5_IRQHandler   0x0801B3DF                  2  Code  Wk  stm32l432xx_Vectors.o
+  DMA1_Channel6_IRQHandler   0x0801B3FB                  2  Code  Wk  stm32l432xx_Vectors.o
+  DMA1_Channel7_IRQHandler   0x0801B423                  2  Code  Wk  stm32l432xx_Vectors.o
+  DMA2_Channel1_IRQHandler   0x0801BCC7                  2  Code  Wk  stm32l432xx_Vectors.o
+  DMA2_Channel2_IRQHandler   0x0801BCE3                  2  Code  Wk  stm32l432xx_Vectors.o
+  DMA2_Channel3_IRQHandler   0x0801BE27                  2  Code  Wk  stm32l432xx_Vectors.o
+  DMA2_Channel4_IRQHandler   0x0801BE2B                  2  Code  Wk  stm32l432xx_Vectors.o
+  DMA2_Channel5_IRQHandler   0x0801BE6B                  2  Code  Wk  stm32l432xx_Vectors.o
+  DMA2_Channel6_IRQHandler   0x0801C1DF                  2  Code  Wk  stm32l432xx_Vectors.o
+  DMA2_Channel7_IRQHandler   0x0801C1E1                  2  Code  Wk  stm32l432xx_Vectors.o
+  DebugMon_Handler           0x0801AE13                  2  Code  Wk  stm32l432xx_Vectors.o
+  DrumDetection_Init         0x0801A34D          14      4  Code  Gb  drum_detection.o
+  DrumDetection_NormalizeYaw
+                             0x080013C9          68      4  Code  Gb  drum_detection.o
+  DrumDetection_ProcessSensorData
+                             0x0800140D       1 168      4  Code  Gb  drum_detection.o
+  DrumDetection_QuaternionToEuler
+                             0x08000191         508      8  Code  Gb  drum_detection.o
+  DrumDetection_SetYawOffset
+                             0x0801A335          22      4  Code  Gb  drum_detection.o
+  EXTI0_IRQHandler           0x0801B043                  2  Code  Wk  stm32l432xx_Vectors.o
+  EXTI15_10_IRQHandler       0x0801B75F                  2  Code  Wk  stm32l432xx_Vectors.o
+  EXTI1_IRQHandler           0x0801B0EB                  2  Code  Wk  stm32l432xx_Vectors.o
+  EXTI2_IRQHandler           0x0801B107                  2  Code  Wk  stm32l432xx_Vectors.o
+  EXTI3_IRQHandler           0x0801B13B                  2  Code  Wk  stm32l432xx_Vectors.o
+  EXTI4_IRQHandler           0x0801B25B                  2  Code  Wk  stm32l432xx_Vectors.o
+  EXTI9_5_IRQHandler         0x0801B4FB                  2  Code  Wk  stm32l432xx_Vectors.o
+  FLASH_IRQHandler           0x0801AFFF                  2  Code  Wk  stm32l432xx_Vectors.o
+  FPU_IRQHandler             0x0801C1F3                  2  Code  Wk  stm32l432xx_Vectors.o
+  GPIO_Init                  0x08000471         252      4  Code  Lc  BNO085_SPI_HAL.o
+  HardFault_Handler          0x08003B25                  4  Code  Wk  STM32L4xx_Startup.o
+  I2C1_ER_IRQHandler         0x0801B62B                  2  Code  Wk  stm32l432xx_Vectors.o
+  I2C1_EV_IRQHandler         0x0801B5A3                  2  Code  Wk  stm32l432xx_Vectors.o
+  I2C3_ER_IRQHandler         0x0801C1E9                  2  Code  Wk  stm32l432xx_Vectors.o
+  I2C3_EV_IRQHandler         0x0801C1E7                  2  Code  Wk  stm32l432xx_Vectors.o
+  LPTIM1_IRQHandler          0x0801C1D9                  2  Code  Wk  stm32l432xx_Vectors.o
+  LPTIM2_IRQHandler          0x0801C1DB                  2  Code  Wk  stm32l432xx_Vectors.o
+  LPUART1_IRQHandler         0x0801C1E3                  2  Code  Wk  stm32l432xx_Vectors.o
+  MemManage_Handler          0x0801A34B                  2  Code  Wk  stm32l432xx_Vectors.o
+  NMI_Handler                0x0801A333                  2  Code  Wk  stm32l432xx_Vectors.o
+  PVD_PVM_IRQHandler         0x0801AE8B                  2  Code  Wk  stm32l432xx_Vectors.o
+  PendSV_Handler             0x0801AE27                  2  Code  Wk  stm32l432xx_Vectors.o
+  PlayDrumSound              0x08001B51         400      4  Code  Lc  main.o
+  ProcessButton1             0x0801AD79         154      4  Code  Lc  main.o
+  ProcessButton2             0x08001CE1         148      4  Code  Lc  main.o
+  QUADSPI_IRQHandler         0x0801C1E5                  2  Code  Wk  stm32l432xx_Vectors.o
+  RCC_IRQHandler             0x0801B01B                  2  Code  Wk  stm32l432xx_Vectors.o
+  RNG_IRQHandler             0x0801C1F1                  2  Code  Wk  stm32l432xx_Vectors.o
+  RTC_Alarm_IRQHandler       0x0801B877                  2  Code  Wk  stm32l432xx_Vectors.o
+  RTC_WKUP_IRQHandler        0x0801AFEB                  2  Code  Wk  stm32l432xx_Vectors.o
+  RTT_Init                   0x0801BE29           2      4  Code  Gb  STM32L432KC_RTT.o
+  RTT_PrintChar              0x08003A79          28      4  Code  Gb  STM32L432KC_RTT.o
+  RTT_PrintFloat             0x0801BE2D          62      4  Code  Gb  STM32L432KC_RTT.o
+  RTT_PrintInt               0x08003AB1          24      4  Code  Gb  STM32L432KC_RTT.o
+  RTT_PrintNewline           0x08003AC9          16      4  Code  Gb  STM32L432KC_RTT.o
+  RTT_PrintStr               0x08003A95          28      4  Code  Gb  STM32L432KC_RTT.o
+  Reset_Handler              0x080310A9                  2  Code  Gb  STM32L4xx_Startup.o
+  SAI1_IRQHandler            0x0801C1EB                  2  Code  Wk  stm32l432xx_Vectors.o
+  SEGGER_RTT_Write           0x0801C37D          54      2  Code  Gb  SEGGER_RTT.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  SEGGER_RTT_WriteNoLock     0x0801C323          90      2  Code  Gb  SEGGER_RTT.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  SPI1_IRQHandler            0x0801B69B                  2  Code  Wk  stm32l432xx_Vectors.o
+  SPI1_Init                  0x08013325         330      4  Code  Lc  BNO085_SPI_HAL.o
+  SPI1_Transfer              0x080012FD         200      4  Code  Lc  BNO085_SPI_HAL.o
+  SPI3_IRQHandler            0x0801BA5B                  2  Code  Wk  stm32l432xx_Vectors.o
+  SVC_Handler                0x0801AD77                  2  Code  Wk  stm32l432xx_Vectors.o
+  SWPMI1_IRQHandler          0x0801C1ED                  2  Code  Wk  stm32l432xx_Vectors.o
+  SysTick_Handler            0x08000461          16      4  Code  Gb  BNO085_SPI_HAL.o
+  SysTick_Init_ms            0x0800B531          58      4  Code  Lc  BNO085_SPI_HAL.o
+  SystemCoreClockUpdate      0x08004555         370      4  Code  Gb  system_stm32l4xx.o
+  SystemInit                 0x0800038D          92      4  Code  Gb  system_stm32l4xx.o
+  TAMP_STAMP_IRQHandler      0x0801AF5B                  2  Code  Wk  stm32l432xx_Vectors.o
+  TIM1_BRK_TIM15_IRQHandler  0x0801B517                  2  Code  Wk  stm32l432xx_Vectors.o
+  TIM1_CC_IRQHandler         0x0801B56B                  2  Code  Wk  stm32l432xx_Vectors.o
+  TIM1_TRG_COM_IRQHandler    0x0801B54F                  2  Code  Wk  stm32l432xx_Vectors.o
+  TIM1_UP_TIM16_IRQHandler   0x0801B533                  2  Code  Wk  stm32l432xx_Vectors.o
+  TIM2_IRQHandler            0x0801B587                  2  Code  Wk  stm32l432xx_Vectors.o
+  TIM6_DAC_IRQHandler        0x0801BB3B                  2  Code  Wk  stm32l432xx_Vectors.o
+  TIM7_IRQHandler            0x0801BC0F                  2  Code  Wk  stm32l432xx_Vectors.o
+  TSC_IRQHandler             0x0801C1EF                  2  Code  Wk  stm32l432xx_Vectors.o
+  USART1_IRQHandler          0x0801B6D3                  2  Code  Wk  stm32l432xx_Vectors.o
+  USART2_IRQHandler          0x0801B71F                  2  Code  Wk  stm32l432xx_Vectors.o
+  USB_IRQHandler             0x0801C1DD                  2  Code  Wk  stm32l432xx_Vectors.o
+  UsageFault_Handler         0x0801AD13                  2  Code  Wk  stm32l432xx_Vectors.o
+  WWDG_IRQHandler            0x0801AE43                  2  Code  Wk  stm32l432xx_Vectors.o
+  _DoInit                    0x08031289         100      2  Code  Lc  SEGGER_RTT.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  _GetAvailWriteSpace        0x0801C2B7          22      2  Code  Lc  SEGGER_RTT.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  _WriteBlocking             0x0801C2CD          86      2  Code  Lc  SEGGER_RTT.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  _WriteNoCheck              0x080312ED          68      2  Code  Lc  SEGGER_RTT.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_X_file_bufsize
+                             0x08031285           4      2  Code  Gb  prinops_rtt.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_X_file_stat   0x0803124D          56      2  Code  Gb  prinops_rtt.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_X_file_write  0x0801C2B1           6      2  Code  Gb  prinops_rtt.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_ascii_isctype
+                             0x08031349          32      2  Code  Lc  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_ascii_iswctype
+                             0x08031375          32      2  Code  Lc  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_ascii_mbtowc  0x0801C3DD          50      2  Code  Gb  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_ascii_tolower
+                             0x0801C41D          14      2  Code  Lc  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_ascii_toupper
+                             0x08031369          12      2  Code  Lc  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_ascii_towlower
+                             0x0801C42B          14      2  Code  Lc  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_ascii_towupper
+                             0x08031395          12      2  Code  Lc  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_ascii_wctomb  0x0801C40F          14      2  Code  Gb  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_current_locale
+                             0x08031331          24      2  Code  Gb  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_float32_PolyEvalP
+                             0x080310C1          56      2  Code  Lc  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_float32_PolyEvalQ
+                             0x0801C231          50      2  Code  Lc  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_float32_asinacos_fpu
+                             0x08003E95         260      4  Code  Lc  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_init_prin     0x0803117D          24      2  Code  Gb  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_prin_flush    0x0801C263          26      2  Code  Gb  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_putc          0x080310F9         132      2  Code  Gb  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_stream_write  0x0801C27D          10      2  Code  Lc  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_vfprintf      0x0801BE6D         874      4  Code  Gb  __SEGGER_RTL_vfprintf_int_nwp.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_vfprintf_int_nwp
+                             0x0801BE6D         874      4  Code  Gb  __SEGGER_RTL_vfprintf_int_nwp.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_init_copy         0x080329A7          20      2  Code  Wk  SEGGER_crtinit.o (SEGGER_crtinit_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_init_ctors        0x08032929          26      4  Code  Wk  SEGGER_crtinit.o (SEGGER_crtinit_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_init_done         0x08003B1B                  4  Code  Gb  SEGGER_THUMB_Startup.o
+  __SEGGER_init_zero         0x08032995          18      2  Code  Wk  SEGGER_crtinit.o (SEGGER_crtinit_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __aeabi_d2f                0x080041F9          76      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __aeabi_ddiv               0x08004001         450      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __aeabi_f2d                0x080041C5          52      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __aeabi_memclr             0x08004469         104      4  Code  Wk  strasmops_arm.o (strops_unaligned_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __aeabi_memclr4            0x08004469                  4  Code  Wk  strasmops_arm.o (strops_unaligned_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __aeabi_memclr8            0x08004469                  4  Code  Wk  strasmops_arm.o (strops_unaligned_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __aeabi_memcpy             0x0800440D                  4  Code  Wk  strasmops_arm.o (strops_unaligned_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __aeabi_memcpy4            0x0800442B                  4  Code  Wk  strasmops_arm.o (strops_unaligned_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __aeabi_memcpy8            0x0800442B                  4  Code  Wk  strasmops_arm.o (strops_unaligned_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __aeabi_memset             0x0800446B                  4  Code  Wk  strasmops_arm.o (strops_unaligned_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __aeabi_memset4            0x0800446B                  4  Code  Wk  strasmops_arm.o (strops_unaligned_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __aeabi_memset8            0x0800446B                  4  Code  Wk  strasmops_arm.o (strops_unaligned_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __aeabi_uldivmod           0x08004245         302      4  Code  Wk  intasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __startup_complete         0x08003B1B                  4  Code  Gb  SEGGER_THUMB_Startup.o
+  _start                     0x08003B11          14      4  Code  Gb  SEGGER_THUMB_Startup.o
+  addAdvertListener          0x080030FD          84      4  Code  Lc  shtp.o
+  addApp                     0x0801B5A5         134      4  Code  Lc  shtp.o
+  addChanListener            0x08003089         116      4  Code  Lc  shtp.o
+  addChannel                 0x0801B62D         110      4  Code  Lc  shtp.o
+  asinf                      0x0801C225           6      2  Code  Wk  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  atan2f                     0x08003D55         320      4  Code  Wk  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  atanf                      0x08003C61         244      4  Code  Wk  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  callAdvertHandler          0x08003509         116      4  Code  Lc  shtp.o
+  configureClock             0x0801BCE5         322      4  Code  Gb  STM32L432KC_RCC.o
+  configureFlash             0x0801BCC9          26      4  Code  Gb  STM32L432KC_FLASH.o
+  configurePLL               0x08003911         360      4  Code  Gb  STM32L432KC_RCC.o
+  decodeAccelerometer        0x08002581         112      4  Code  Lc  sh2_SensorValue.o
+  decodeAmbientLight         0x08002B69          48      4  Code  Lc  sh2_SensorValue.o
+  decodeArvrStabilizedGRV    0x08002D45         144      4  Code  Lc  sh2_SensorValue.o
+  decodeArvrStabilizedRV     0x08002C95         176      4  Code  Lc  sh2_SensorValue.o
+  decodeCircleDetector       0x0801B535          26      4  Code  Lc  sh2_SensorValue.o
+  decodeFlipDetector         0x0801B45D          26      4  Code  Lc  sh2_SensorValue.o
+  decodeGameRotationVector   0x080029F9         144      4  Code  Lc  sh2_SensorValue.o
+  decodeGeomagneticRotationVector
+                             0x08002A89         176      4  Code  Lc  sh2_SensorValue.o
+  decodeGravity              0x08002661         112      4  Code  Lc  sh2_SensorValue.o
+  decodeGyroIntegratedRV     0x08002DD5         240      4  Code  Lc  sh2_SensorValue.o
+  decodeGyroscopeCalibrated  0x080026D1         112      4  Code  Lc  sh2_SensorValue.o
+  decodeGyroscopeUncal       0x08002741         204      4  Code  Lc  sh2_SensorValue.o
+  decodeHeartRateMonitor     0x0801B551          26      4  Code  Lc  sh2_SensorValue.o
+  decodeHumidity             0x08002B99          48      4  Code  Lc  sh2_SensorValue.o
+  decodeIZroRequest          0x08002EC5          28      4  Code  Lc  sh2_SensorValue.o
+  decodeLinearAcceleration   0x080025F1         112      4  Code  Lc  sh2_SensorValue.o
+  decodeMagneticFieldCalibrated
+                             0x0800280D         112      4  Code  Lc  sh2_SensorValue.o
+  decodeMagneticFieldUncal   0x0800287D         204      4  Code  Lc  sh2_SensorValue.o
+  decodePersonalActivityClassifier
+                             0x0801B4B1          74      4  Code  Lc  sh2_SensorValue.o
+  decodePickupDetector       0x0801B479          26      4  Code  Lc  sh2_SensorValue.o
+  decodePocketDetector       0x0801B519          26      4  Code  Lc  sh2_SensorValue.o
+  decodePressure             0x08002B39          48      4  Code  Lc  sh2_SensorValue.o
+  decodeProximity            0x08002BC9          48      4  Code  Lc  sh2_SensorValue.o
+  decodeRawAccelerometer     0x0801B315          62      4  Code  Lc  sh2_SensorValue.o
+  decodeRawGyroscope         0x0801B355          74      4  Code  Lc  sh2_SensorValue.o
+  decodeRawMagnetometer      0x0801B3A1          62      4  Code  Lc  sh2_SensorValue.o
+  decodeReserved             0x08002C29          48      4  Code  Lc  sh2_SensorValue.o
+  decodeRotationVector       0x08002949         176      4  Code  Lc  sh2_SensorValue.o
+  decodeShakeDetector        0x0801B441          26      4  Code  Lc  sh2_SensorValue.o
+  decodeSignificantMotion    0x0801B425          26      4  Code  Lc  sh2_SensorValue.o
+  decodeSleepDetector        0x08002C81          20      4  Code  Lc  sh2_SensorValue.o
+  decodeStabilityClassifier  0x08002C6D          20      4  Code  Lc  sh2_SensorValue.o
+  decodeStabilityDetector    0x0801B495          26      4  Code  Lc  sh2_SensorValue.o
+  decodeStepCounter          0x0801B3FD          38      4  Code  Lc  sh2_SensorValue.o
+  decodeStepDetector         0x0801B3E1          26      4  Code  Lc  sh2_SensorValue.o
+  decodeTapDetector          0x08002C59          20      4  Code  Lc  sh2_SensorValue.o
+  decodeTemperature          0x08002BF9          48      4  Code  Lc  sh2_SensorValue.o
+  decodeTiltDetector         0x0801B4FD          26      4  Code  Lc  sh2_SensorValue.o
+  executableAdvertHdlr       0x0801AFED          18      4  Code  Lc  sh2.o
+  executableDeviceHdlr       0x080021C1         112      4  Code  Lc  sh2.o
+  exit                       0x08003B1F           2      4  Code  Gb  SEGGER_THUMB_Startup.o
+  fmodf                      0x08003B4D         276      4  Code  Wk  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  fwrite                     0x0801C1F7          46      2  Code  Wk  fileops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  getInstance                0x08002FED          72      4  Code  Lc  shtp.o
+  getReportLen               0x0801B25D          74      4  Code  Lc  sh2.o
+  get_millis                 0x0801AE15          18      4  Code  Lc  main.o
+  hal_getTimeUs              0x0800128D          24      4  Code  Lc  BNO085_SPI_HAL.o
+  hal_hardwareReset          0x08000421          64      4  Code  Lc  BNO085_SPI_HAL.o
+  main                       0x0801A35D       2 486      4  Code  Gb  main.o
+  memcpy                     0x0800440D          92      4  Code  Wk  strasmops_arm.o (strops_unaligned_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  memset                     0x08004471                  4  Code  Wk  strasmops_arm.o (strops_unaligned_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  min_u16                    0x080035D9          48      4  Code  Lc  shtp.o
+  ms_delay                   0x08003AD9          40      4  Code  Gb  STM32L432KC_TIMER.o
+  opCompleted                0x0801B0ED          26      4  Code  Lc  sh2.o
+  opProcess                  0x0801B045         166      4  Code  Lc  sh2.o
+  opRx                       0x0801B109          50      4  Code  Lc  sh2.o
+  opStart                    0x0800229D          80      4  Code  Lc  sh2.o
+  printf                     0x0801C287          42      2  Code  Wk  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  processAdvertisement       0x080032D5         564      4  Code  Lc  shtp.o
+  read16                     0x0801B589          26      4  Code  Gb  sh2_util.o
+  read32                     0x08002F05          16      4  Code  Gb  sh2_util.o
+  readu16                    0x0801B56D          26      4  Code  Gb  sh2_util.o
+  readu32                    0x08002EF5          16      4  Code  Gb  sh2_util.o
+  readu8                     0x08002EE1          20      4  Code  Gb  sh2_util.o
+  reset_handler              0x080310A9                  2  Code  Gb  STM32L4xx_Startup.o
+  rxAssemble                 0x0801B879         482      4  Code  Lc  shtp.o
+  sendCtrl                   0x0800227D          32      4  Code  Lc  sh2.o
+  sensorHandler              0x080018AD         676      4  Code  Lc  main.o
+  sensorhubAdvertHdlr        0x0801AE8D         206      4  Code  Lc  sh2.o
+  sensorhubControlHdlr       0x08002011         360      4  Code  Lc  sh2.o
+  sensorhubInputGyroRvHdlr   0x0801AF5D         142      4  Code  Lc  sh2.o
+  sensorhubInputHdlr         0x0801B13D         286      4  Code  Lc  sh2.o
+  sensorhubInputNormalHdlr   0x08002179          36      4  Code  Lc  sh2.o
+  sensorhubInputWakeHdlr     0x0800219D          36      4  Code  Lc  sh2.o
+  setAppName                 0x0800357D          92      4  Code  Lc  shtp.o
+  setSensorConfigStart       0x08001D9D         196      4  Code  Lc  sh2.o
+  sh2_decodeSensorEvent      0x080022F9         648      4  Code  Gb  sh2_SensorValue.o
+  sh2_open                   0x08001E61         432      4  Code  Gb  sh2.o
+  sh2_service                0x0801B001          26      4  Code  Gb  sh2.o
+  sh2_setSensorCallback      0x0801B01D          38      4  Code  Gb  sh2.o
+  sh2_setSensorConfig        0x08002231          76      4  Code  Gb  sh2.o
+  shtpAdvertHdlr             0x0801B69D          54      4  Code  Lc  shtp.o
+  shtpCmdListener            0x0801B721          62      4  Code  Lc  shtp.o
+  shtpEventCallback          0x0801AE45          70      4  Code  Lc  sh2.o
+  shtp_chanNo                0x08003151         180      4  Code  Gb  shtp.o
+  shtp_init                  0x08002FCD          32      4  Code  Lc  shtp.o
+  shtp_listenAdvert          0x08003035          56      4  Code  Gb  shtp.o
+  shtp_listenChan            0x0801B6D5          74      4  Code  Gb  shtp.o
+  shtp_open                  0x08002F15         184      4  Code  Gb  shtp.o
+  shtp_send                  0x08003205         100      4  Code  Gb  shtp.o
+  shtp_service               0x08003269         108      4  Code  Gb  shtp.o
+  shtp_setEventCallback      0x0800306D          28      4  Code  Gb  shtp.o
+  snprintf                   0x08031195          48      2  Code  Wk  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  spihal_close               0x08000595           8      4  Code  Lc  BNO085_SPI_HAL.o
+  spihal_open                0x0800056D          40      4  Code  Lc  BNO085_SPI_HAL.o
+  spihal_read                0x0800059D       3 312      4  Code  Lc  BNO085_SPI_HAL.o
+  spihal_wait_for_int        0x080012A5          88      4  Code  Lc  BNO085_SPI_HAL.o
+  spihal_write               0x0801A2DD          86      4  Code  Lc  BNO085_SPI_HAL.o
+  sqrtf                      0x0801C22B           6      2  Code  Wk  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  strcmp                     0x08004375         102      4  Code  Wk  strasmops_arm.o (strops_unaligned_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  strcpy                     0x080043DD          46      4  Code  Wk  strasmops_arm.o (strops_unaligned_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  strlen                     0x0801C3B3          42      2  Code  Wk  strops.o (strops_unaligned_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  touSTimestamp              0x0801B2A9         106      4  Code  Lc  sh2.o
+  txProcess                  0x0801B761         278      4  Code  Lc  shtp.o
+  updateCallbacks            0x0801BA5D         222      4  Code  Lc  shtp.o
+  vfprintf                   0x080311C5          28      2  Code  Wk  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  vfprintf_l                 0x080311E1         108      2  Code  Wk  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+
+Function symbols by address:
+
+     Address  Symbol name                      Size  Align  Type  Bd  Object File
+  ----------  -------------------------  ----------  -----  ----  --  -----------
+  0x08000191  DrumDetection_QuaternionToEuler
+                                                508      8  Code  Gb  drum_detection.o
+  0x0800038D  SystemInit                         92      4  Code  Gb  system_stm32l4xx.o
+  0x08000419  BNO085_HardwareReset                8      4  Code  Gb  BNO085_SPI_HAL.o
+  0x08000421  hal_hardwareReset                  64      4  Code  Lc  BNO085_SPI_HAL.o
+  0x08000461  SysTick_Handler                    16      4  Code  Gb  BNO085_SPI_HAL.o
+  0x08000471  GPIO_Init                         252      4  Code  Lc  BNO085_SPI_HAL.o
+  0x0800056D  spihal_open                        40      4  Code  Lc  BNO085_SPI_HAL.o
+  0x08000595  spihal_close                        8      4  Code  Lc  BNO085_SPI_HAL.o
+  0x0800059D  spihal_read                     3 312      4  Code  Lc  BNO085_SPI_HAL.o
+  0x0800128D  hal_getTimeUs                      24      4  Code  Lc  BNO085_SPI_HAL.o
+  0x080012A5  spihal_wait_for_int                88      4  Code  Lc  BNO085_SPI_HAL.o
+  0x080012FD  SPI1_Transfer                     200      4  Code  Lc  BNO085_SPI_HAL.o
+  0x080013C9  DrumDetection_NormalizeYaw
+                                                 68      4  Code  Gb  drum_detection.o
+  0x0800140D  DrumDetection_ProcessSensorData
+                                              1 168      4  Code  Gb  drum_detection.o
+  0x080018AD  sensorHandler                     676      4  Code  Lc  main.o
+  0x08001B51  PlayDrumSound                     400      4  Code  Lc  main.o
+  0x08001CE1  ProcessButton2                    148      4  Code  Lc  main.o
+  0x08001D9D  setSensorConfigStart              196      4  Code  Lc  sh2.o
+  0x08001E61  sh2_open                          432      4  Code  Gb  sh2.o
+  0x08002011  sensorhubControlHdlr              360      4  Code  Lc  sh2.o
+  0x08002179  sensorhubInputNormalHdlr           36      4  Code  Lc  sh2.o
+  0x0800219D  sensorhubInputWakeHdlr             36      4  Code  Lc  sh2.o
+  0x080021C1  executableDeviceHdlr              112      4  Code  Lc  sh2.o
+  0x08002231  sh2_setSensorConfig                76      4  Code  Gb  sh2.o
+  0x0800227D  sendCtrl                           32      4  Code  Lc  sh2.o
+  0x0800229D  opStart                            80      4  Code  Lc  sh2.o
+  0x080022F9  sh2_decodeSensorEvent             648      4  Code  Gb  sh2_SensorValue.o
+  0x08002581  decodeAccelerometer               112      4  Code  Lc  sh2_SensorValue.o
+  0x080025F1  decodeLinearAcceleration          112      4  Code  Lc  sh2_SensorValue.o
+  0x08002661  decodeGravity                     112      4  Code  Lc  sh2_SensorValue.o
+  0x080026D1  decodeGyroscopeCalibrated         112      4  Code  Lc  sh2_SensorValue.o
+  0x08002741  decodeGyroscopeUncal              204      4  Code  Lc  sh2_SensorValue.o
+  0x0800280D  decodeMagneticFieldCalibrated
+                                                112      4  Code  Lc  sh2_SensorValue.o
+  0x0800287D  decodeMagneticFieldUncal          204      4  Code  Lc  sh2_SensorValue.o
+  0x08002949  decodeRotationVector              176      4  Code  Lc  sh2_SensorValue.o
+  0x080029F9  decodeGameRotationVector          144      4  Code  Lc  sh2_SensorValue.o
+  0x08002A89  decodeGeomagneticRotationVector
+                                                176      4  Code  Lc  sh2_SensorValue.o
+  0x08002B39  decodePressure                     48      4  Code  Lc  sh2_SensorValue.o
+  0x08002B69  decodeAmbientLight                 48      4  Code  Lc  sh2_SensorValue.o
+  0x08002B99  decodeHumidity                     48      4  Code  Lc  sh2_SensorValue.o
+  0x08002BC9  decodeProximity                    48      4  Code  Lc  sh2_SensorValue.o
+  0x08002BF9  decodeTemperature                  48      4  Code  Lc  sh2_SensorValue.o
+  0x08002C29  decodeReserved                     48      4  Code  Lc  sh2_SensorValue.o
+  0x08002C59  decodeTapDetector                  20      4  Code  Lc  sh2_SensorValue.o
+  0x08002C6D  decodeStabilityClassifier          20      4  Code  Lc  sh2_SensorValue.o
+  0x08002C81  decodeSleepDetector                20      4  Code  Lc  sh2_SensorValue.o
+  0x08002C95  decodeArvrStabilizedRV            176      4  Code  Lc  sh2_SensorValue.o
+  0x08002D45  decodeArvrStabilizedGRV           144      4  Code  Lc  sh2_SensorValue.o
+  0x08002DD5  decodeGyroIntegratedRV            240      4  Code  Lc  sh2_SensorValue.o
+  0x08002EC5  decodeIZroRequest                  28      4  Code  Lc  sh2_SensorValue.o
+  0x08002EE1  readu8                             20      4  Code  Gb  sh2_util.o
+  0x08002EF5  readu32                            16      4  Code  Gb  sh2_util.o
+  0x08002F05  read32                             16      4  Code  Gb  sh2_util.o
+  0x08002F15  shtp_open                         184      4  Code  Gb  shtp.o
+  0x08002FCD  shtp_init                          32      4  Code  Lc  shtp.o
+  0x08002FED  getInstance                        72      4  Code  Lc  shtp.o
+  0x08003035  shtp_listenAdvert                  56      4  Code  Gb  shtp.o
+  0x0800306D  shtp_setEventCallback              28      4  Code  Gb  shtp.o
+  0x08003089  addChanListener                   116      4  Code  Lc  shtp.o
+  0x080030FD  addAdvertListener                  84      4  Code  Lc  shtp.o
+  0x08003151  shtp_chanNo                       180      4  Code  Gb  shtp.o
+  0x08003205  shtp_send                         100      4  Code  Gb  shtp.o
+  0x08003269  shtp_service                      108      4  Code  Gb  shtp.o
+  0x080032D5  processAdvertisement              564      4  Code  Lc  shtp.o
+  0x08003509  callAdvertHandler                 116      4  Code  Lc  shtp.o
+  0x0800357D  setAppName                         92      4  Code  Lc  shtp.o
+  0x080035D9  min_u16                            48      4  Code  Lc  shtp.o
+  0x08003611  DAC_EnableClock                    40      4  Code  Gb  STM32L432KC_DAC.o
+  0x08003639  DAC_Init                          336      4  Code  Gb  STM32L432KC_DAC.o
+  0x08003789  DAC_SetValue                      192      4  Code  Gb  STM32L432KC_DAC.o
+  0x08003849  DAC_InitAudio                     200      4  Code  Gb  STM32L432KC_DAC.o
+  0x08003911  configurePLL                      360      4  Code  Gb  STM32L432KC_RCC.o
+  0x08003A79  RTT_PrintChar                      28      4  Code  Gb  STM32L432KC_RTT.o
+  0x08003A95  RTT_PrintStr                       28      4  Code  Gb  STM32L432KC_RTT.o
+  0x08003AB1  RTT_PrintInt                       24      4  Code  Gb  STM32L432KC_RTT.o
+  0x08003AC9  RTT_PrintNewline                   16      4  Code  Gb  STM32L432KC_RTT.o
+  0x08003AD9  ms_delay                           40      4  Code  Gb  STM32L432KC_TIMER.o
+  0x08003B11  _start                             14      4  Code  Gb  SEGGER_THUMB_Startup.o
+  0x08003B1B  __startup_complete                         4  Code  Gb  SEGGER_THUMB_Startup.o
+  0x08003B1B  __SEGGER_init_done                         4  Code  Gb  SEGGER_THUMB_Startup.o
+  0x08003B1F  exit                                2      4  Code  Gb  SEGGER_THUMB_Startup.o
+  0x08003B25  HardFault_Handler                          4  Code  Wk  STM32L4xx_Startup.o
+  0x08003B4D  fmodf                             276      4  Code  Wk  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x08003C61  atanf                             244      4  Code  Wk  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x08003D55  atan2f                            320      4  Code  Wk  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x08003E95  __SEGGER_RTL_float32_asinacos_fpu
+                                                260      4  Code  Lc  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x08004001  __aeabi_ddiv                      450      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x080041C5  __aeabi_f2d                        52      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x080041F9  __aeabi_d2f                        76      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x08004245  __aeabi_uldivmod                  302      4  Code  Wk  intasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x08004375  strcmp                            102      4  Code  Wk  strasmops_arm.o (strops_unaligned_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x080043DD  strcpy                             46      4  Code  Wk  strasmops_arm.o (strops_unaligned_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x0800440D  memcpy                             92      4  Code  Wk  strasmops_arm.o (strops_unaligned_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x0800440D  __aeabi_memcpy                             4  Code  Wk  strasmops_arm.o (strops_unaligned_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x0800442B  __aeabi_memcpy8                            4  Code  Wk  strasmops_arm.o (strops_unaligned_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x0800442B  __aeabi_memcpy4                            4  Code  Wk  strasmops_arm.o (strops_unaligned_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x08004469  __aeabi_memclr8                            4  Code  Wk  strasmops_arm.o (strops_unaligned_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x08004469  __aeabi_memclr4                            4  Code  Wk  strasmops_arm.o (strops_unaligned_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x08004469  __aeabi_memclr                    104      4  Code  Wk  strasmops_arm.o (strops_unaligned_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x0800446B  __aeabi_memset8                            4  Code  Wk  strasmops_arm.o (strops_unaligned_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x0800446B  __aeabi_memset4                            4  Code  Wk  strasmops_arm.o (strops_unaligned_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x0800446B  __aeabi_memset                             4  Code  Wk  strasmops_arm.o (strops_unaligned_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x08004471  memset                                     4  Code  Wk  strasmops_arm.o (strops_unaligned_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x08004555  SystemCoreClockUpdate             370      4  Code  Gb  system_stm32l4xx.o
+  0x0800795D  BNO085_SPI_HAL_Init               102      4  Code  Gb  BNO085_SPI_HAL.o
+  0x0800B531  SysTick_Init_ms                    58      4  Code  Lc  BNO085_SPI_HAL.o
+  0x08013325  SPI1_Init                         330      4  Code  Lc  BNO085_SPI_HAL.o
+  0x0801A2DD  spihal_write                       86      4  Code  Lc  BNO085_SPI_HAL.o
+  0x0801A333  NMI_Handler                                2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801A335  DrumDetection_SetYawOffset
+                                                 22      4  Code  Gb  drum_detection.o
+  0x0801A34B  MemManage_Handler                          2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801A34D  DrumDetection_Init                 14      4  Code  Gb  drum_detection.o
+  0x0801A35B  BusFault_Handler                           2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801A35D  main                            2 486      4  Code  Gb  main.o
+  0x0801AD13  UsageFault_Handler                         2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801AD15  Buttons_Init                       98      4  Code  Lc  main.o
+  0x0801AD77  SVC_Handler                                2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801AD79  ProcessButton1                    154      4  Code  Lc  main.o
+  0x0801AE13  DebugMon_Handler                           2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801AE15  get_millis                         18      4  Code  Lc  main.o
+  0x0801AE27  PendSV_Handler                             2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801AE29  Button_Read                        26      4  Code  Lc  main.o
+  0x0801AE43  WWDG_IRQHandler                            2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801AE45  shtpEventCallback                  70      4  Code  Lc  sh2.o
+  0x0801AE8B  PVD_PVM_IRQHandler                         2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801AE8D  sensorhubAdvertHdlr               206      4  Code  Lc  sh2.o
+  0x0801AF5B  TAMP_STAMP_IRQHandler                      2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801AF5D  sensorhubInputGyroRvHdlr          142      4  Code  Lc  sh2.o
+  0x0801AFEB  RTC_WKUP_IRQHandler                        2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801AFED  executableAdvertHdlr               18      4  Code  Lc  sh2.o
+  0x0801AFFF  FLASH_IRQHandler                           2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801B001  sh2_service                        26      4  Code  Gb  sh2.o
+  0x0801B01B  RCC_IRQHandler                             2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801B01D  sh2_setSensorCallback              38      4  Code  Gb  sh2.o
+  0x0801B043  EXTI0_IRQHandler                           2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801B045  opProcess                         166      4  Code  Lc  sh2.o
+  0x0801B0EB  EXTI1_IRQHandler                           2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801B0ED  opCompleted                        26      4  Code  Lc  sh2.o
+  0x0801B107  EXTI2_IRQHandler                           2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801B109  opRx                               50      4  Code  Lc  sh2.o
+  0x0801B13B  EXTI3_IRQHandler                           2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801B13D  sensorhubInputHdlr                286      4  Code  Lc  sh2.o
+  0x0801B25B  EXTI4_IRQHandler                           2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801B25D  getReportLen                       74      4  Code  Lc  sh2.o
+  0x0801B2A7  DMA1_Channel1_IRQHandler                   2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801B2A9  touSTimestamp                     106      4  Code  Lc  sh2.o
+  0x0801B313  DMA1_Channel2_IRQHandler                   2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801B315  decodeRawAccelerometer             62      4  Code  Lc  sh2_SensorValue.o
+  0x0801B353  DMA1_Channel3_IRQHandler                   2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801B355  decodeRawGyroscope                 74      4  Code  Lc  sh2_SensorValue.o
+  0x0801B39F  DMA1_Channel4_IRQHandler                   2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801B3A1  decodeRawMagnetometer              62      4  Code  Lc  sh2_SensorValue.o
+  0x0801B3DF  DMA1_Channel5_IRQHandler                   2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801B3E1  decodeStepDetector                 26      4  Code  Lc  sh2_SensorValue.o
+  0x0801B3FB  DMA1_Channel6_IRQHandler                   2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801B3FD  decodeStepCounter                  38      4  Code  Lc  sh2_SensorValue.o
+  0x0801B423  DMA1_Channel7_IRQHandler                   2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801B425  decodeSignificantMotion            26      4  Code  Lc  sh2_SensorValue.o
+  0x0801B43F  ADC1_IRQHandler                            2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801B441  decodeShakeDetector                26      4  Code  Lc  sh2_SensorValue.o
+  0x0801B45B  CAN1_TX_IRQHandler                         2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801B45D  decodeFlipDetector                 26      4  Code  Lc  sh2_SensorValue.o
+  0x0801B477  CAN1_RX0_IRQHandler                        2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801B479  decodePickupDetector               26      4  Code  Lc  sh2_SensorValue.o
+  0x0801B493  CAN1_RX1_IRQHandler                        2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801B495  decodeStabilityDetector            26      4  Code  Lc  sh2_SensorValue.o
+  0x0801B4AF  CAN1_SCE_IRQHandler                        2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801B4B1  decodePersonalActivityClassifier
+                                                 74      4  Code  Lc  sh2_SensorValue.o
+  0x0801B4FB  EXTI9_5_IRQHandler                         2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801B4FD  decodeTiltDetector                 26      4  Code  Lc  sh2_SensorValue.o
+  0x0801B517  TIM1_BRK_TIM15_IRQHandler                  2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801B519  decodePocketDetector               26      4  Code  Lc  sh2_SensorValue.o
+  0x0801B533  TIM1_UP_TIM16_IRQHandler                   2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801B535  decodeCircleDetector               26      4  Code  Lc  sh2_SensorValue.o
+  0x0801B54F  TIM1_TRG_COM_IRQHandler                    2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801B551  decodeHeartRateMonitor             26      4  Code  Lc  sh2_SensorValue.o
+  0x0801B56B  TIM1_CC_IRQHandler                         2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801B56D  readu16                            26      4  Code  Gb  sh2_util.o
+  0x0801B587  TIM2_IRQHandler                            2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801B589  read16                             26      4  Code  Gb  sh2_util.o
+  0x0801B5A3  I2C1_EV_IRQHandler                         2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801B5A5  addApp                            134      4  Code  Lc  shtp.o
+  0x0801B62B  I2C1_ER_IRQHandler                         2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801B62D  addChannel                        110      4  Code  Lc  shtp.o
+  0x0801B69B  SPI1_IRQHandler                            2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801B69D  shtpAdvertHdlr                     54      4  Code  Lc  shtp.o
+  0x0801B6D3  USART1_IRQHandler                          2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801B6D5  shtp_listenChan                    74      4  Code  Gb  shtp.o
+  0x0801B71F  USART2_IRQHandler                          2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801B721  shtpCmdListener                    62      4  Code  Lc  shtp.o
+  0x0801B75F  EXTI15_10_IRQHandler                       2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801B761  txProcess                         278      4  Code  Lc  shtp.o
+  0x0801B877  RTC_Alarm_IRQHandler                       2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801B879  rxAssemble                        482      4  Code  Lc  shtp.o
+  0x0801BA5B  SPI3_IRQHandler                            2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801BA5D  updateCallbacks                   222      4  Code  Lc  shtp.o
+  0x0801BB3B  TIM6_DAC_IRQHandler                        2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801BB3D  DAC_ConfigureGPIO                 210      4  Code  Gb  STM32L432KC_DAC.o
+  0x0801BC0F  TIM7_IRQHandler                            2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801BC11  DAC_PlayWAV                       182      4  Code  Gb  STM32L432KC_DAC.o
+  0x0801BCC7  DMA2_Channel1_IRQHandler                   2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801BCC9  configureFlash                     26      4  Code  Gb  STM32L432KC_FLASH.o
+  0x0801BCE3  DMA2_Channel2_IRQHandler                   2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801BCE5  configureClock                    322      4  Code  Gb  STM32L432KC_RCC.o
+  0x0801BE27  DMA2_Channel3_IRQHandler                   2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801BE29  RTT_Init                            2      4  Code  Gb  STM32L432KC_RTT.o
+  0x0801BE2B  DMA2_Channel4_IRQHandler                   2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801BE2D  RTT_PrintFloat                     62      4  Code  Gb  STM32L432KC_RTT.o
+  0x0801BE6B  DMA2_Channel5_IRQHandler                   2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801BE6D  __SEGGER_RTL_vfprintf_int_nwp
+                                                874      4  Code  Gb  __SEGGER_RTL_vfprintf_int_nwp.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x0801BE6D  __SEGGER_RTL_vfprintf             874      4  Code  Gb  __SEGGER_RTL_vfprintf_int_nwp.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x0801C1D7  COMP_IRQHandler                            2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801C1D9  LPTIM1_IRQHandler                          2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801C1DB  LPTIM2_IRQHandler                          2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801C1DD  USB_IRQHandler                             2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801C1DF  DMA2_Channel6_IRQHandler                   2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801C1E1  DMA2_Channel7_IRQHandler                   2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801C1E3  LPUART1_IRQHandler                         2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801C1E5  QUADSPI_IRQHandler                         2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801C1E7  I2C3_EV_IRQHandler                         2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801C1E9  I2C3_ER_IRQHandler                         2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801C1EB  SAI1_IRQHandler                            2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801C1ED  SWPMI1_IRQHandler                          2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801C1EF  TSC_IRQHandler                             2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801C1F1  RNG_IRQHandler                             2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801C1F3  FPU_IRQHandler                             2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801C1F5  CRS_IRQHandler                             2  Code  Wk  stm32l432xx_Vectors.o
+  0x0801C1F7  fwrite                             46      2  Code  Wk  fileops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x0801C225  asinf                               6      2  Code  Wk  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x0801C22B  sqrtf                               6      2  Code  Wk  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x0801C231  __SEGGER_RTL_float32_PolyEvalQ
+                                                 50      2  Code  Lc  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x0801C263  __SEGGER_RTL_prin_flush            26      2  Code  Gb  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x0801C27D  __SEGGER_RTL_stream_write          10      2  Code  Lc  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x0801C287  printf                             42      2  Code  Wk  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x0801C2B1  __SEGGER_RTL_X_file_write           6      2  Code  Gb  prinops_rtt.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x0801C2B7  _GetAvailWriteSpace                22      2  Code  Lc  SEGGER_RTT.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x0801C2CD  _WriteBlocking                     86      2  Code  Lc  SEGGER_RTT.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x0801C323  SEGGER_RTT_WriteNoLock             90      2  Code  Gb  SEGGER_RTT.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x0801C37D  SEGGER_RTT_Write                   54      2  Code  Gb  SEGGER_RTT.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x0801C3B3  strlen                             42      2  Code  Wk  strops.o (strops_unaligned_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x0801C3DD  __SEGGER_RTL_ascii_mbtowc          50      2  Code  Gb  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x0801C40F  __SEGGER_RTL_ascii_wctomb          14      2  Code  Gb  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x0801C41D  __SEGGER_RTL_ascii_tolower
+                                                 14      2  Code  Lc  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x0801C42B  __SEGGER_RTL_ascii_towlower
+                                                 14      2  Code  Lc  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x080310A9  reset_handler                              2  Code  Gb  STM32L4xx_Startup.o
+  0x080310A9  Reset_Handler                              2  Code  Gb  STM32L4xx_Startup.o
+  0x080310C1  __SEGGER_RTL_float32_PolyEvalP
+                                                 56      2  Code  Lc  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x080310F9  __SEGGER_RTL_putc                 132      2  Code  Gb  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x0803117D  __SEGGER_RTL_init_prin             24      2  Code  Gb  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x08031195  snprintf                           48      2  Code  Wk  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x080311C5  vfprintf                           28      2  Code  Wk  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x080311E1  vfprintf_l                        108      2  Code  Wk  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x0803124D  __SEGGER_RTL_X_file_stat           56      2  Code  Gb  prinops_rtt.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x08031285  __SEGGER_RTL_X_file_bufsize
+                                                  4      2  Code  Gb  prinops_rtt.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x08031289  _DoInit                           100      2  Code  Lc  SEGGER_RTT.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x080312ED  _WriteNoCheck                      68      2  Code  Lc  SEGGER_RTT.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x08031331  __SEGGER_RTL_current_locale
+                                                 24      2  Code  Gb  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x08031349  __SEGGER_RTL_ascii_isctype
+                                                 32      2  Code  Lc  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x08031369  __SEGGER_RTL_ascii_toupper
+                                                 12      2  Code  Lc  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x08031375  __SEGGER_RTL_ascii_iswctype
+                                                 32      2  Code  Lc  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x08031395  __SEGGER_RTL_ascii_towupper
+                                                 12      2  Code  Lc  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x08032929  __SEGGER_init_ctors                26      4  Code  Wk  SEGGER_crtinit.o (SEGGER_crtinit_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x08032995  __SEGGER_init_zero                 18      2  Code  Wk  SEGGER_crtinit.o (SEGGER_crtinit_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x080329A7  __SEGGER_init_copy                 20      2  Code  Wk  SEGGER_crtinit.o (SEGGER_crtinit_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+
+Function symbols by descending size:
+
+  Symbol name                      Size  Align  Type  Bd  Object File
+  -------------------------  ----------  -----  ----  --  -----------
+  spihal_read                     3 312      4  Code  Lc  BNO085_SPI_HAL.o
+  main                            2 486      4  Code  Gb  main.o
+  DrumDetection_ProcessSensorData
+                                  1 168      4  Code  Gb  drum_detection.o
+  __SEGGER_RTL_vfprintf             874      4  Code  Gb  __SEGGER_RTL_vfprintf_int_nwp.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_vfprintf_int_nwp
+                                    874      4  Code  Gb  __SEGGER_RTL_vfprintf_int_nwp.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  sensorHandler                     676      4  Code  Lc  main.o
+  sh2_decodeSensorEvent             648      4  Code  Gb  sh2_SensorValue.o
+  processAdvertisement              564      4  Code  Lc  shtp.o
+  DrumDetection_QuaternionToEuler
+                                    508      8  Code  Gb  drum_detection.o
+  rxAssemble                        482      4  Code  Lc  shtp.o
+  __aeabi_ddiv                      450      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  sh2_open                          432      4  Code  Gb  sh2.o
+  PlayDrumSound                     400      4  Code  Lc  main.o
+  SystemCoreClockUpdate             370      4  Code  Gb  system_stm32l4xx.o
+  configurePLL                      360      4  Code  Gb  STM32L432KC_RCC.o
+  sensorhubControlHdlr              360      4  Code  Lc  sh2.o
+  DAC_Init                          336      4  Code  Gb  STM32L432KC_DAC.o
+  SPI1_Init                         330      4  Code  Lc  BNO085_SPI_HAL.o
+  configureClock                    322      4  Code  Gb  STM32L432KC_RCC.o
+  atan2f                            320      4  Code  Wk  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __aeabi_uldivmod                  302      4  Code  Wk  intasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  sensorhubInputHdlr                286      4  Code  Lc  sh2.o
+  txProcess                         278      4  Code  Lc  shtp.o
+  fmodf                             276      4  Code  Wk  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_float32_asinacos_fpu
+                                    260      4  Code  Lc  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  GPIO_Init                         252      4  Code  Lc  BNO085_SPI_HAL.o
+  atanf                             244      4  Code  Wk  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  decodeGyroIntegratedRV            240      4  Code  Lc  sh2_SensorValue.o
+  updateCallbacks                   222      4  Code  Lc  shtp.o
+  DAC_ConfigureGPIO                 210      4  Code  Gb  STM32L432KC_DAC.o
+  sensorhubAdvertHdlr               206      4  Code  Lc  sh2.o
+  decodeGyroscopeUncal              204      4  Code  Lc  sh2_SensorValue.o
+  decodeMagneticFieldUncal          204      4  Code  Lc  sh2_SensorValue.o
+  DAC_InitAudio                     200      4  Code  Gb  STM32L432KC_DAC.o
+  SPI1_Transfer                     200      4  Code  Lc  BNO085_SPI_HAL.o
+  setSensorConfigStart              196      4  Code  Lc  sh2.o
+  DAC_SetValue                      192      4  Code  Gb  STM32L432KC_DAC.o
+  shtp_open                         184      4  Code  Gb  shtp.o
+  DAC_PlayWAV                       182      4  Code  Gb  STM32L432KC_DAC.o
+  shtp_chanNo                       180      4  Code  Gb  shtp.o
+  decodeArvrStabilizedRV            176      4  Code  Lc  sh2_SensorValue.o
+  decodeGeomagneticRotationVector
+                                    176      4  Code  Lc  sh2_SensorValue.o
+  decodeRotationVector              176      4  Code  Lc  sh2_SensorValue.o
+  opProcess                         166      4  Code  Lc  sh2.o
+  ProcessButton1                    154      4  Code  Lc  main.o
+  ProcessButton2                    148      4  Code  Lc  main.o
+  decodeArvrStabilizedGRV           144      4  Code  Lc  sh2_SensorValue.o
+  decodeGameRotationVector          144      4  Code  Lc  sh2_SensorValue.o
+  sensorhubInputGyroRvHdlr          142      4  Code  Lc  sh2.o
+  addApp                            134      4  Code  Lc  shtp.o
+  __SEGGER_RTL_putc                 132      2  Code  Gb  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  addChanListener                   116      4  Code  Lc  shtp.o
+  callAdvertHandler                 116      4  Code  Lc  shtp.o
+  decodeAccelerometer               112      4  Code  Lc  sh2_SensorValue.o
+  decodeGravity                     112      4  Code  Lc  sh2_SensorValue.o
+  decodeGyroscopeCalibrated         112      4  Code  Lc  sh2_SensorValue.o
+  decodeLinearAcceleration          112      4  Code  Lc  sh2_SensorValue.o
+  decodeMagneticFieldCalibrated
+                                    112      4  Code  Lc  sh2_SensorValue.o
+  executableDeviceHdlr              112      4  Code  Lc  sh2.o
+  addChannel                        110      4  Code  Lc  shtp.o
+  shtp_service                      108      4  Code  Gb  shtp.o
+  vfprintf_l                        108      2  Code  Wk  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  touSTimestamp                     106      4  Code  Lc  sh2.o
+  __aeabi_memclr                    104      4  Code  Wk  strasmops_arm.o (strops_unaligned_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  BNO085_SPI_HAL_Init               102      4  Code  Gb  BNO085_SPI_HAL.o
+  strcmp                            102      4  Code  Wk  strasmops_arm.o (strops_unaligned_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  _DoInit                           100      2  Code  Lc  SEGGER_RTT.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  shtp_send                         100      4  Code  Gb  shtp.o
+  Buttons_Init                       98      4  Code  Lc  main.o
+  SystemInit                         92      4  Code  Gb  system_stm32l4xx.o
+  memcpy                             92      4  Code  Wk  strasmops_arm.o (strops_unaligned_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  setAppName                         92      4  Code  Lc  shtp.o
+  SEGGER_RTT_WriteNoLock             90      2  Code  Gb  SEGGER_RTT.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  spihal_wait_for_int                88      4  Code  Lc  BNO085_SPI_HAL.o
+  _WriteBlocking                     86      2  Code  Lc  SEGGER_RTT.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  spihal_write                       86      4  Code  Lc  BNO085_SPI_HAL.o
+  addAdvertListener                  84      4  Code  Lc  shtp.o
+  opStart                            80      4  Code  Lc  sh2.o
+  __aeabi_d2f                        76      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  sh2_setSensorConfig                76      4  Code  Gb  sh2.o
+  decodePersonalActivityClassifier
+                                     74      4  Code  Lc  sh2_SensorValue.o
+  decodeRawGyroscope                 74      4  Code  Lc  sh2_SensorValue.o
+  getReportLen                       74      4  Code  Lc  sh2.o
+  shtp_listenChan                    74      4  Code  Gb  shtp.o
+  getInstance                        72      4  Code  Lc  shtp.o
+  shtpEventCallback                  70      4  Code  Lc  sh2.o
+  DrumDetection_NormalizeYaw
+                                     68      4  Code  Gb  drum_detection.o
+  _WriteNoCheck                      68      2  Code  Lc  SEGGER_RTT.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  hal_hardwareReset                  64      4  Code  Lc  BNO085_SPI_HAL.o
+  RTT_PrintFloat                     62      4  Code  Gb  STM32L432KC_RTT.o
+  decodeRawAccelerometer             62      4  Code  Lc  sh2_SensorValue.o
+  decodeRawMagnetometer              62      4  Code  Lc  sh2_SensorValue.o
+  shtpCmdListener                    62      4  Code  Lc  shtp.o
+  SysTick_Init_ms                    58      4  Code  Lc  BNO085_SPI_HAL.o
+  __SEGGER_RTL_X_file_stat           56      2  Code  Gb  prinops_rtt.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_float32_PolyEvalP
+                                     56      2  Code  Lc  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  shtp_listenAdvert                  56      4  Code  Gb  shtp.o
+  SEGGER_RTT_Write                   54      2  Code  Gb  SEGGER_RTT.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  shtpAdvertHdlr                     54      4  Code  Lc  shtp.o
+  __aeabi_f2d                        52      4  Code  Wk  floatasmops_arm.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_ascii_mbtowc          50      2  Code  Gb  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_float32_PolyEvalQ
+                                     50      2  Code  Lc  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  opRx                               50      4  Code  Lc  sh2.o
+  decodeAmbientLight                 48      4  Code  Lc  sh2_SensorValue.o
+  decodeHumidity                     48      4  Code  Lc  sh2_SensorValue.o
+  decodePressure                     48      4  Code  Lc  sh2_SensorValue.o
+  decodeProximity                    48      4  Code  Lc  sh2_SensorValue.o
+  decodeReserved                     48      4  Code  Lc  sh2_SensorValue.o
+  decodeTemperature                  48      4  Code  Lc  sh2_SensorValue.o
+  min_u16                            48      4  Code  Lc  shtp.o
+  snprintf                           48      2  Code  Wk  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  fwrite                             46      2  Code  Wk  fileops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  strcpy                             46      4  Code  Wk  strasmops_arm.o (strops_unaligned_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  printf                             42      2  Code  Wk  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  strlen                             42      2  Code  Wk  strops.o (strops_unaligned_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  DAC_EnableClock                    40      4  Code  Gb  STM32L432KC_DAC.o
+  ms_delay                           40      4  Code  Gb  STM32L432KC_TIMER.o
+  spihal_open                        40      4  Code  Lc  BNO085_SPI_HAL.o
+  decodeStepCounter                  38      4  Code  Lc  sh2_SensorValue.o
+  sh2_setSensorCallback              38      4  Code  Gb  sh2.o
+  sensorhubInputNormalHdlr           36      4  Code  Lc  sh2.o
+  sensorhubInputWakeHdlr             36      4  Code  Lc  sh2.o
+  __SEGGER_RTL_ascii_isctype
+                                     32      2  Code  Lc  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_ascii_iswctype
+                                     32      2  Code  Lc  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  sendCtrl                           32      4  Code  Lc  sh2.o
+  shtp_init                          32      4  Code  Lc  shtp.o
+  RTT_PrintChar                      28      4  Code  Gb  STM32L432KC_RTT.o
+  RTT_PrintStr                       28      4  Code  Gb  STM32L432KC_RTT.o
+  decodeIZroRequest                  28      4  Code  Lc  sh2_SensorValue.o
+  shtp_setEventCallback              28      4  Code  Gb  shtp.o
+  vfprintf                           28      2  Code  Wk  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  Button_Read                        26      4  Code  Lc  main.o
+  __SEGGER_RTL_prin_flush            26      2  Code  Gb  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_init_ctors                26      4  Code  Wk  SEGGER_crtinit.o (SEGGER_crtinit_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  configureFlash                     26      4  Code  Gb  STM32L432KC_FLASH.o
+  decodeCircleDetector               26      4  Code  Lc  sh2_SensorValue.o
+  decodeFlipDetector                 26      4  Code  Lc  sh2_SensorValue.o
+  decodeHeartRateMonitor             26      4  Code  Lc  sh2_SensorValue.o
+  decodePickupDetector               26      4  Code  Lc  sh2_SensorValue.o
+  decodePocketDetector               26      4  Code  Lc  sh2_SensorValue.o
+  decodeShakeDetector                26      4  Code  Lc  sh2_SensorValue.o
+  decodeSignificantMotion            26      4  Code  Lc  sh2_SensorValue.o
+  decodeStabilityDetector            26      4  Code  Lc  sh2_SensorValue.o
+  decodeStepDetector                 26      4  Code  Lc  sh2_SensorValue.o
+  decodeTiltDetector                 26      4  Code  Lc  sh2_SensorValue.o
+  opCompleted                        26      4  Code  Lc  sh2.o
+  read16                             26      4  Code  Gb  sh2_util.o
+  readu16                            26      4  Code  Gb  sh2_util.o
+  sh2_service                        26      4  Code  Gb  sh2.o
+  RTT_PrintInt                       24      4  Code  Gb  STM32L432KC_RTT.o
+  __SEGGER_RTL_current_locale
+                                     24      2  Code  Gb  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_init_prin             24      2  Code  Gb  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  hal_getTimeUs                      24      4  Code  Lc  BNO085_SPI_HAL.o
+  DrumDetection_SetYawOffset
+                                     22      4  Code  Gb  drum_detection.o
+  _GetAvailWriteSpace                22      2  Code  Lc  SEGGER_RTT.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_init_copy                 20      2  Code  Wk  SEGGER_crtinit.o (SEGGER_crtinit_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  decodeSleepDetector                20      4  Code  Lc  sh2_SensorValue.o
+  decodeStabilityClassifier          20      4  Code  Lc  sh2_SensorValue.o
+  decodeTapDetector                  20      4  Code  Lc  sh2_SensorValue.o
+  readu8                             20      4  Code  Gb  sh2_util.o
+  __SEGGER_init_zero                 18      2  Code  Wk  SEGGER_crtinit.o (SEGGER_crtinit_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  executableAdvertHdlr               18      4  Code  Lc  sh2.o
+  get_millis                         18      4  Code  Lc  main.o
+  RTT_PrintNewline                   16      4  Code  Gb  STM32L432KC_RTT.o
+  SysTick_Handler                    16      4  Code  Gb  BNO085_SPI_HAL.o
+  read32                             16      4  Code  Gb  sh2_util.o
+  readu32                            16      4  Code  Gb  sh2_util.o
+  DrumDetection_Init                 14      4  Code  Gb  drum_detection.o
+  __SEGGER_RTL_ascii_tolower
+                                     14      2  Code  Lc  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_ascii_towlower
+                                     14      2  Code  Lc  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_ascii_wctomb          14      2  Code  Gb  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  _start                             14      4  Code  Gb  SEGGER_THUMB_Startup.o
+  __SEGGER_RTL_ascii_toupper
+                                     12      2  Code  Lc  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_ascii_towupper
+                                     12      2  Code  Lc  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_stream_write          10      2  Code  Lc  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  BNO085_HardwareReset                8      4  Code  Gb  BNO085_SPI_HAL.o
+  spihal_close                        8      4  Code  Lc  BNO085_SPI_HAL.o
+  __SEGGER_RTL_X_file_write           6      2  Code  Gb  prinops_rtt.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  asinf                               6      2  Code  Wk  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  sqrtf                               6      2  Code  Wk  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_X_file_bufsize
+                                      4      2  Code  Gb  prinops_rtt.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  RTT_Init                            2      4  Code  Gb  STM32L432KC_RTT.o
+  exit                                2      4  Code  Gb  SEGGER_THUMB_Startup.o
+  ADC1_IRQHandler                            2  Code  Wk  stm32l432xx_Vectors.o
+  BusFault_Handler                           2  Code  Wk  stm32l432xx_Vectors.o
+  CAN1_RX0_IRQHandler                        2  Code  Wk  stm32l432xx_Vectors.o
+  CAN1_RX1_IRQHandler                        2  Code  Wk  stm32l432xx_Vectors.o
+  CAN1_SCE_IRQHandler                        2  Code  Wk  stm32l432xx_Vectors.o
+  CAN1_TX_IRQHandler                         2  Code  Wk  stm32l432xx_Vectors.o
+  COMP_IRQHandler                            2  Code  Wk  stm32l432xx_Vectors.o
+  CRS_IRQHandler                             2  Code  Wk  stm32l432xx_Vectors.o
+  DMA1_Channel1_IRQHandler                   2  Code  Wk  stm32l432xx_Vectors.o
+  DMA1_Channel2_IRQHandler                   2  Code  Wk  stm32l432xx_Vectors.o
+  DMA1_Channel3_IRQHandler                   2  Code  Wk  stm32l432xx_Vectors.o
+  DMA1_Channel4_IRQHandler                   2  Code  Wk  stm32l432xx_Vectors.o
+  DMA1_Channel5_IRQHandler                   2  Code  Wk  stm32l432xx_Vectors.o
+  DMA1_Channel6_IRQHandler                   2  Code  Wk  stm32l432xx_Vectors.o
+  DMA1_Channel7_IRQHandler                   2  Code  Wk  stm32l432xx_Vectors.o
+  DMA2_Channel1_IRQHandler                   2  Code  Wk  stm32l432xx_Vectors.o
+  DMA2_Channel2_IRQHandler                   2  Code  Wk  stm32l432xx_Vectors.o
+  DMA2_Channel3_IRQHandler                   2  Code  Wk  stm32l432xx_Vectors.o
+  DMA2_Channel4_IRQHandler                   2  Code  Wk  stm32l432xx_Vectors.o
+  DMA2_Channel5_IRQHandler                   2  Code  Wk  stm32l432xx_Vectors.o
+  DMA2_Channel6_IRQHandler                   2  Code  Wk  stm32l432xx_Vectors.o
+  DMA2_Channel7_IRQHandler                   2  Code  Wk  stm32l432xx_Vectors.o
+  DebugMon_Handler                           2  Code  Wk  stm32l432xx_Vectors.o
+  EXTI0_IRQHandler                           2  Code  Wk  stm32l432xx_Vectors.o
+  EXTI15_10_IRQHandler                       2  Code  Wk  stm32l432xx_Vectors.o
+  EXTI1_IRQHandler                           2  Code  Wk  stm32l432xx_Vectors.o
+  EXTI2_IRQHandler                           2  Code  Wk  stm32l432xx_Vectors.o
+  EXTI3_IRQHandler                           2  Code  Wk  stm32l432xx_Vectors.o
+  EXTI4_IRQHandler                           2  Code  Wk  stm32l432xx_Vectors.o
+  EXTI9_5_IRQHandler                         2  Code  Wk  stm32l432xx_Vectors.o
+  FLASH_IRQHandler                           2  Code  Wk  stm32l432xx_Vectors.o
+  FPU_IRQHandler                             2  Code  Wk  stm32l432xx_Vectors.o
+  HardFault_Handler                          4  Code  Wk  STM32L4xx_Startup.o
+  I2C1_ER_IRQHandler                         2  Code  Wk  stm32l432xx_Vectors.o
+  I2C1_EV_IRQHandler                         2  Code  Wk  stm32l432xx_Vectors.o
+  I2C3_ER_IRQHandler                         2  Code  Wk  stm32l432xx_Vectors.o
+  I2C3_EV_IRQHandler                         2  Code  Wk  stm32l432xx_Vectors.o
+  LPTIM1_IRQHandler                          2  Code  Wk  stm32l432xx_Vectors.o
+  LPTIM2_IRQHandler                          2  Code  Wk  stm32l432xx_Vectors.o
+  LPUART1_IRQHandler                         2  Code  Wk  stm32l432xx_Vectors.o
+  MemManage_Handler                          2  Code  Wk  stm32l432xx_Vectors.o
+  NMI_Handler                                2  Code  Wk  stm32l432xx_Vectors.o
+  PVD_PVM_IRQHandler                         2  Code  Wk  stm32l432xx_Vectors.o
+  PendSV_Handler                             2  Code  Wk  stm32l432xx_Vectors.o
+  QUADSPI_IRQHandler                         2  Code  Wk  stm32l432xx_Vectors.o
+  RCC_IRQHandler                             2  Code  Wk  stm32l432xx_Vectors.o
+  RNG_IRQHandler                             2  Code  Wk  stm32l432xx_Vectors.o
+  RTC_Alarm_IRQHandler                       2  Code  Wk  stm32l432xx_Vectors.o
+  RTC_WKUP_IRQHandler                        2  Code  Wk  stm32l432xx_Vectors.o
+  Reset_Handler                              2  Code  Gb  STM32L4xx_Startup.o
+  SAI1_IRQHandler                            2  Code  Wk  stm32l432xx_Vectors.o
+  SPI1_IRQHandler                            2  Code  Wk  stm32l432xx_Vectors.o
+  SPI3_IRQHandler                            2  Code  Wk  stm32l432xx_Vectors.o
+  SVC_Handler                                2  Code  Wk  stm32l432xx_Vectors.o
+  SWPMI1_IRQHandler                          2  Code  Wk  stm32l432xx_Vectors.o
+  TAMP_STAMP_IRQHandler                      2  Code  Wk  stm32l432xx_Vectors.o
+  TIM1_BRK_TIM15_IRQHandler                  2  Code  Wk  stm32l432xx_Vectors.o
+  TIM1_CC_IRQHandler                         2  Code  Wk  stm32l432xx_Vectors.o
+  TIM1_TRG_COM_IRQHandler                    2  Code  Wk  stm32l432xx_Vectors.o
+  TIM1_UP_TIM16_IRQHandler                   2  Code  Wk  stm32l432xx_Vectors.o
+  TIM2_IRQHandler                            2  Code  Wk  stm32l432xx_Vectors.o
+  TIM6_DAC_IRQHandler                        2  Code  Wk  stm32l432xx_Vectors.o
+  TIM7_IRQHandler                            2  Code  Wk  stm32l432xx_Vectors.o
+  TSC_IRQHandler                             2  Code  Wk  stm32l432xx_Vectors.o
+  USART1_IRQHandler                          2  Code  Wk  stm32l432xx_Vectors.o
+  USART2_IRQHandler                          2  Code  Wk  stm32l432xx_Vectors.o
+  USB_IRQHandler                             2  Code  Wk  stm32l432xx_Vectors.o
+  UsageFault_Handler                         2  Code  Wk  stm32l432xx_Vectors.o
+  WWDG_IRQHandler                            2  Code  Wk  stm32l432xx_Vectors.o
+  __SEGGER_init_done                         4  Code  Gb  SEGGER_THUMB_Startup.o
+  __aeabi_memclr4                            4  Code  Wk  strasmops_arm.o (strops_unaligned_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __aeabi_memclr8                            4  Code  Wk  strasmops_arm.o (strops_unaligned_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __aeabi_memcpy                             4  Code  Wk  strasmops_arm.o (strops_unaligned_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __aeabi_memcpy4                            4  Code  Wk  strasmops_arm.o (strops_unaligned_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __aeabi_memcpy8                            4  Code  Wk  strasmops_arm.o (strops_unaligned_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __aeabi_memset                             4  Code  Wk  strasmops_arm.o (strops_unaligned_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __aeabi_memset4                            4  Code  Wk  strasmops_arm.o (strops_unaligned_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __aeabi_memset8                            4  Code  Wk  strasmops_arm.o (strops_unaligned_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __startup_complete                         4  Code  Gb  SEGGER_THUMB_Startup.o
+  memset                                     4  Code  Wk  strasmops_arm.o (strops_unaligned_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  reset_handler                              2  Code  Gb  STM32L4xx_Startup.o
+
+Read-write data symbols by name:
+
+  Symbol name                   Address        Size  Align  Type  Bd  Object File
+  -------------------------  ----------  ----------  -----  ----  --  -----------
+  DrumDetection_ProcessSensorData.gyro_debug_count
+                             0x10000D9C           4      4  Zero  Lc  drum_detection.o
+  DrumDetection_ProcessSensorData.last_gyro_y
+                             0x10000DA0           2      2  Zero  Lc  drum_detection.o
+  DrumDetection_ProcessSensorData.last_pitch
+                             0x10000D98           4      4  Zero  Lc  drum_detection.o
+  DrumDetection_ProcessSensorData.last_yaw
+                             0x10000D94           4      4  Zero  Lc  drum_detection.o
+  SystemCoreClock            0x100011DC           4      4  Init  Gb  system_stm32l4xx.o
+  _SEGGER_RTT                0x10000C60         168      4  Zero  Gb  SEGGER_RTT.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __RAL_global_locale        0x100011BC          20      4  Init  Gb  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_global_locale
+                             0x100011BC          20      4  Init  Gb  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_locale_ptr    0x10000D84           4      4  Zero  Gb  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_stderr_file   0x10000D80           4      4  Zero  Lc  prinops_rtt.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_stdin_file    0x10000D7C           4      4  Zero  Lc  prinops_rtt.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_stdout_file   0x10000D78           4      4  Zero  Lc  prinops_rtt.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  _acDownBuffer              0x100011A2          16         Zero  Lc  SEGGER_RTT.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  _acUpBuffer                0x10000DA2       1 024         Zero  Lc  SEGGER_RTT.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  _sh2                       0x10000A64         508      4  Zero  Gb  sh2.o
+  buttonPrinted1             0x100011B8           1         Zero  Lc  main.o
+  buttonPrinted2             0x100011B7           1         Zero  Lc  main.o
+  drumState                  0x100011B2           3         Zero  Lc  main.o
+  g_hal                      0x10000D38          20      4  Zero  Lc  BNO085_SPI_HAL.o
+  get_millis.ms_counter      0x10000D90           4      4  Zero  Lc  main.o
+  hal                        0x10000D24          20      4  Zero  Lc  main.o
+  instances                  0x10000030       2 612      4  Zero  Lc  shtp.o
+  lastDebounceTime1          0x10000D8C           4      4  Zero  Lc  main.o
+  lastDebounceTime2          0x10000D88           4      4  Zero  Lc  main.o
+  main.loop_count            0x10000D74           4      4  Zero  Lc  main.o
+  main.sensor_debug_count    0x10000D70           4      4  Zero  Lc  main.o
+  main.sh2_service_count     0x10000D6C           4      4  Zero  Lc  main.o
+  newSensorData              0x100011B6           1         Zero  Lc  main.o
+  sensorHandler.sensor_data_count
+                             0x10000D68           4      4  Zero  Lc  main.o
+  sensorValue                0x10000000          48      8  Zero  Lc  main.o
+  sh2AsyncEvent              0x10000D08          28      4  Zero  Lc  sh2.o
+  shtp_initialized           0x100011B5           1         Zero  Lc  shtp.o
+  spihal_read.int_detected_count
+                             0x10000D64           4      4  Zero  Lc  BNO085_SPI_HAL.o
+  spihal_read.last_debug_time
+                             0x10000D60           4      4  Zero  Lc  BNO085_SPI_HAL.o
+  spihal_read.read_call_count
+                             0x10000D5C           4      4  Zero  Lc  BNO085_SPI_HAL.o
+  stderr                     0x100011D8           4      4  Init  Gb  prinops_rtt.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  stdin                      0x100011D4           4      4  Init  Gb  prinops_rtt.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  stdout                     0x100011D0           4      4  Init  Gb  prinops_rtt.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  systick_ms_counter         0x10000D58           4      4  Zero  Lc  BNO085_SPI_HAL.o
+  touSTimestamp.lastHostInt  0x10000D54           4      4  Zero  Lc  sh2.o
+  touSTimestamp.rollovers    0x10000D50           4      4  Zero  Lc  sh2.o
+  yawOffset                  0x10000D4C           4      4  Zero  Gb  drum_detection.o
+
+Read-write data symbols by address:
+
+     Address  Symbol name                      Size  Align  Type  Bd  Object File
+  ----------  -------------------------  ----------  -----  ----  --  -----------
+  0x10000000  sensorValue                        48      8  Zero  Lc  main.o
+  0x10000030  instances                       2 612      4  Zero  Lc  shtp.o
+  0x10000A64  _sh2                              508      4  Zero  Gb  sh2.o
+  0x10000C60  _SEGGER_RTT                       168      4  Zero  Gb  SEGGER_RTT.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x10000D08  sh2AsyncEvent                      28      4  Zero  Lc  sh2.o
+  0x10000D24  hal                                20      4  Zero  Lc  main.o
+  0x10000D38  g_hal                              20      4  Zero  Lc  BNO085_SPI_HAL.o
+  0x10000D4C  yawOffset                           4      4  Zero  Gb  drum_detection.o
+  0x10000D50  touSTimestamp.rollovers             4      4  Zero  Lc  sh2.o
+  0x10000D54  touSTimestamp.lastHostInt           4      4  Zero  Lc  sh2.o
+  0x10000D58  systick_ms_counter                  4      4  Zero  Lc  BNO085_SPI_HAL.o
+  0x10000D5C  spihal_read.read_call_count
+                                                  4      4  Zero  Lc  BNO085_SPI_HAL.o
+  0x10000D60  spihal_read.last_debug_time
+                                                  4      4  Zero  Lc  BNO085_SPI_HAL.o
+  0x10000D64  spihal_read.int_detected_count
+                                                  4      4  Zero  Lc  BNO085_SPI_HAL.o
+  0x10000D68  sensorHandler.sensor_data_count
+                                                  4      4  Zero  Lc  main.o
+  0x10000D6C  main.sh2_service_count              4      4  Zero  Lc  main.o
+  0x10000D70  main.sensor_debug_count             4      4  Zero  Lc  main.o
+  0x10000D74  main.loop_count                     4      4  Zero  Lc  main.o
+  0x10000D78  __SEGGER_RTL_stdout_file            4      4  Zero  Lc  prinops_rtt.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x10000D7C  __SEGGER_RTL_stdin_file             4      4  Zero  Lc  prinops_rtt.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x10000D80  __SEGGER_RTL_stderr_file            4      4  Zero  Lc  prinops_rtt.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x10000D84  __SEGGER_RTL_locale_ptr             4      4  Zero  Gb  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x10000D88  lastDebounceTime2                   4      4  Zero  Lc  main.o
+  0x10000D8C  lastDebounceTime1                   4      4  Zero  Lc  main.o
+  0x10000D90  get_millis.ms_counter               4      4  Zero  Lc  main.o
+  0x10000D94  DrumDetection_ProcessSensorData.last_yaw
+                                                  4      4  Zero  Lc  drum_detection.o
+  0x10000D98  DrumDetection_ProcessSensorData.last_pitch
+                                                  4      4  Zero  Lc  drum_detection.o
+  0x10000D9C  DrumDetection_ProcessSensorData.gyro_debug_count
+                                                  4      4  Zero  Lc  drum_detection.o
+  0x10000DA0  DrumDetection_ProcessSensorData.last_gyro_y
+                                                  2      2  Zero  Lc  drum_detection.o
+  0x10000DA2  _acUpBuffer                     1 024         Zero  Lc  SEGGER_RTT.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x100011A2  _acDownBuffer                      16         Zero  Lc  SEGGER_RTT.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x100011B2  drumState                           3         Zero  Lc  main.o
+  0x100011B5  shtp_initialized                    1         Zero  Lc  shtp.o
+  0x100011B6  newSensorData                       1         Zero  Lc  main.o
+  0x100011B7  buttonPrinted2                      1         Zero  Lc  main.o
+  0x100011B8  buttonPrinted1                      1         Zero  Lc  main.o
+  0x100011BC  __SEGGER_RTL_global_locale
+                                                 20      4  Init  Gb  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x100011BC  __RAL_global_locale                20      4  Init  Gb  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x100011D0  stdout                              4      4  Init  Gb  prinops_rtt.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x100011D4  stdin                               4      4  Init  Gb  prinops_rtt.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x100011D8  stderr                              4      4  Init  Gb  prinops_rtt.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x100011DC  SystemCoreClock                     4      4  Init  Gb  system_stm32l4xx.o
+
+Read-write data symbols by descending size:
+
+  Symbol name                      Size  Align  Type  Bd  Object File
+  -------------------------  ----------  -----  ----  --  -----------
+  instances                       2 612      4  Zero  Lc  shtp.o
+  _acUpBuffer                     1 024         Zero  Lc  SEGGER_RTT.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  _sh2                              508      4  Zero  Gb  sh2.o
+  _SEGGER_RTT                       168      4  Zero  Gb  SEGGER_RTT.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  sensorValue                        48      8  Zero  Lc  main.o
+  sh2AsyncEvent                      28      4  Zero  Lc  sh2.o
+  __RAL_global_locale                20      4  Init  Gb  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_global_locale
+                                     20      4  Init  Gb  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  g_hal                              20      4  Zero  Lc  BNO085_SPI_HAL.o
+  hal                                20      4  Zero  Lc  main.o
+  _acDownBuffer                      16         Zero  Lc  SEGGER_RTT.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  DrumDetection_ProcessSensorData.gyro_debug_count
+                                      4      4  Zero  Lc  drum_detection.o
+  DrumDetection_ProcessSensorData.last_pitch
+                                      4      4  Zero  Lc  drum_detection.o
+  DrumDetection_ProcessSensorData.last_yaw
+                                      4      4  Zero  Lc  drum_detection.o
+  SystemCoreClock                     4      4  Init  Gb  system_stm32l4xx.o
+  __SEGGER_RTL_locale_ptr             4      4  Zero  Gb  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_stderr_file            4      4  Zero  Lc  prinops_rtt.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_stdin_file             4      4  Zero  Lc  prinops_rtt.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_stdout_file            4      4  Zero  Lc  prinops_rtt.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  get_millis.ms_counter               4      4  Zero  Lc  main.o
+  lastDebounceTime1                   4      4  Zero  Lc  main.o
+  lastDebounceTime2                   4      4  Zero  Lc  main.o
+  main.loop_count                     4      4  Zero  Lc  main.o
+  main.sensor_debug_count             4      4  Zero  Lc  main.o
+  main.sh2_service_count              4      4  Zero  Lc  main.o
+  sensorHandler.sensor_data_count
+                                      4      4  Zero  Lc  main.o
+  spihal_read.int_detected_count
+                                      4      4  Zero  Lc  BNO085_SPI_HAL.o
+  spihal_read.last_debug_time
+                                      4      4  Zero  Lc  BNO085_SPI_HAL.o
+  spihal_read.read_call_count
+                                      4      4  Zero  Lc  BNO085_SPI_HAL.o
+  stderr                              4      4  Init  Gb  prinops_rtt.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  stdin                               4      4  Init  Gb  prinops_rtt.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  stdout                              4      4  Init  Gb  prinops_rtt.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  systick_ms_counter                  4      4  Zero  Lc  BNO085_SPI_HAL.o
+  touSTimestamp.lastHostInt           4      4  Zero  Lc  sh2.o
+  touSTimestamp.rollovers             4      4  Zero  Lc  sh2.o
+  yawOffset                           4      4  Zero  Gb  drum_detection.o
+  drumState                           3         Zero  Lc  main.o
+  DrumDetection_ProcessSensorData.last_gyro_y
+                                      2      2  Zero  Lc  drum_detection.o
+  buttonPrinted1                      1         Zero  Lc  main.o
+  buttonPrinted2                      1         Zero  Lc  main.o
+  newSensorData                       1         Zero  Lc  main.o
+  shtp_initialized                    1         Zero  Lc  shtp.o
+
+Read-only data symbols by name:
+
+  Symbol name                   Address        Size  Align  Type  Bd  Object File
+  -------------------------  ----------  ----------  -----  ----  --  -----------
+  AHBPrescTable              0x080322F8          16         Cnst  Gb  system_stm32l4xx.o
+  MSIRangeTable              0x080003E8          48      4  Cnst  Gb  system_stm32l4xx.o
+  _DoInit._aInitStr          0x0803226C          17         Cnst  Lc  SEGGER_RTT.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_ascii_ctype_map
+                             0x080328A8         128         Cnst  Lc  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_ascii_ctype_mask
+                             0x080322E7          13         Cnst  Lc  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_c_locale      0x080044D0          12      4  Cnst  Gb  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_c_locale_abbrev_day_names
+                             0x08032298          29         Cnst  Gb  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_c_locale_abbrev_month_names
+                             0x080322B5          49         Cnst  Gb  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_c_locale_am_pm_indicator
+                             0x080317C8           7         Cnst  Gb  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_c_locale_data
+                             0x080044FC          88      4  Cnst  Gb  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_c_locale_date_format
+                             0x08032286           9         Cnst  Gb  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_c_locale_date_time_format
+                             0x080317CF          15         Cnst  Gb  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_c_locale_day_names
+                             0x08031CD8          58         Cnst  Gb  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_c_locale_month_names
+                             0x08031771          87         Cnst  Gb  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_c_locale_time_format
+                             0x0803228F           9         Cnst  Gb  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_codeset_ascii
+                             0x080044DC          32      4  Cnst  Gb  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_data_empty_string
+                             0x080322E6           1         Cnst  Gb  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_data_utf8_period
+                             0x08031D14           2         Cnst  Gb  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_float32_ASinACos
+                             0x08003F98          56      4  Cnst  Lc  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_float32_ATan  0x08003FD0          48      4  Cnst  Lc  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_hex_lc        0x08032898          16         Cnst  Gb  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_RTL_hex_uc        0x08032888          16         Cnst  Gb  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  __SEGGER_init_data__       0x08032970        [36]      4  Cnst  Lc  [ Linker created ]
+  __SEGGER_init_table__      0x0803294C        [36]      4  Cnst  Lc  [ Linker created ]
+  advertise                  0x08031CB8           2         Cnst  Lc  shtp.o
+  crash_sample_data          0x0801C438      44 100      2  Cnst  Gb  crash_sample.o
+  crash_sample_length        0x0800018C           4      4  Cnst  Gb  crash_sample.o
+  crash_sample_sample_rate   0x080013C4           4      4  Cnst  Gb  crash_sample.o
+  hihat_closed_sample_data   0x080046C6      12 950      2  Cnst  Gb  hihat_closed_sample.o
+  hihat_closed_sample_length
+                             0x0800189C           4      4  Cnst  Gb  hihat_closed_sample.o
+  hihat_closed_sample_sample_rate
+                             0x080018A0           4      4  Cnst  Gb  hihat_closed_sample.o
+  kick_sample_data           0x080079C2      15 214      2  Cnst  Gb  kick_sample.o
+  kick_sample_length         0x080018A4           4      4  Cnst  Gb  kick_sample.o
+  kick_sample_sample_rate    0x080018A8           4      4  Cnst  Gb  kick_sample.o
+  ride_sample_data           0x0800B56A      32 186      2  Cnst  Gb  ride_sample.o
+  ride_sample_length         0x08001D94           4      4  Cnst  Gb  ride_sample.o
+  ride_sample_sample_rate    0x08001D98           4      4  Cnst  Gb  ride_sample.o
+  setSensorConfigOp          0x080022EC          12      4  Cnst  Gb  sh2.o
+  snare_sample_data          0x0802707C       5 724      2  Cnst  Gb  snare_sample.o
+  snare_sample_length        0x08003608           4      4  Cnst  Gb  snare_sample.o
+  snare_sample_sample_rate   0x0800360C           4      4  Cnst  Gb  snare_sample.o
+  tom_high_sample_data       0x0801346E      28 270      2  Cnst  Gb  tom_high_sample.o
+  tom_high_sample_length     0x08003B00           4      4  Cnst  Gb  tom_high_sample.o
+  tom_high_sample_sample_rate
+                             0x08003B04           4      4  Cnst  Gb  tom_high_sample.o
+  tom_low_sample_data        0x080286D8      35 280      2  Cnst  Gb  tom_low_sample.o
+  tom_low_sample_length      0x08003B08           4      4  Cnst  Gb  tom_low_sample.o
+  tom_low_sample_sample_rate
+                             0x08003B0C           4      4  Cnst  Gb  tom_low_sample.o
+
+Read-only data symbols by address:
+
+     Address  Symbol name                      Size  Align  Type  Bd  Object File
+  ----------  -------------------------  ----------  -----  ----  --  -----------
+  0x0800018C  crash_sample_length                 4      4  Cnst  Gb  crash_sample.o
+  0x080003E8  MSIRangeTable                      48      4  Cnst  Gb  system_stm32l4xx.o
+  0x080013C4  crash_sample_sample_rate            4      4  Cnst  Gb  crash_sample.o
+  0x0800189C  hihat_closed_sample_length
+                                                  4      4  Cnst  Gb  hihat_closed_sample.o
+  0x080018A0  hihat_closed_sample_sample_rate
+                                                  4      4  Cnst  Gb  hihat_closed_sample.o
+  0x080018A4  kick_sample_length                  4      4  Cnst  Gb  kick_sample.o
+  0x080018A8  kick_sample_sample_rate             4      4  Cnst  Gb  kick_sample.o
+  0x08001D94  ride_sample_length                  4      4  Cnst  Gb  ride_sample.o
+  0x08001D98  ride_sample_sample_rate             4      4  Cnst  Gb  ride_sample.o
+  0x080022EC  setSensorConfigOp                  12      4  Cnst  Gb  sh2.o
+  0x08003608  snare_sample_length                 4      4  Cnst  Gb  snare_sample.o
+  0x0800360C  snare_sample_sample_rate            4      4  Cnst  Gb  snare_sample.o
+  0x08003B00  tom_high_sample_length              4      4  Cnst  Gb  tom_high_sample.o
+  0x08003B04  tom_high_sample_sample_rate
+                                                  4      4  Cnst  Gb  tom_high_sample.o
+  0x08003B08  tom_low_sample_length               4      4  Cnst  Gb  tom_low_sample.o
+  0x08003B0C  tom_low_sample_sample_rate
+                                                  4      4  Cnst  Gb  tom_low_sample.o
+  0x08003F98  __SEGGER_RTL_float32_ASinACos
+                                                 56      4  Cnst  Lc  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x08003FD0  __SEGGER_RTL_float32_ATan          48      4  Cnst  Lc  floatops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x080044D0  __SEGGER_RTL_c_locale              12      4  Cnst  Gb  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x080044DC  __SEGGER_RTL_codeset_ascii
+                                                 32      4  Cnst  Gb  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x080044FC  __SEGGER_RTL_c_locale_data
+                                                 88      4  Cnst  Gb  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x080046C6  hihat_closed_sample_data       12 950      2  Cnst  Gb  hihat_closed_sample.o
+  0x080079C2  kick_sample_data               15 214      2  Cnst  Gb  kick_sample.o
+  0x0800B56A  ride_sample_data               32 186      2  Cnst  Gb  ride_sample.o
+  0x0801346E  tom_high_sample_data           28 270      2  Cnst  Gb  tom_high_sample.o
+  0x0801C438  crash_sample_data              44 100      2  Cnst  Gb  crash_sample.o
+  0x0802707C  snare_sample_data               5 724      2  Cnst  Gb  snare_sample.o
+  0x080286D8  tom_low_sample_data            35 280      2  Cnst  Gb  tom_low_sample.o
+  0x08031771  __SEGGER_RTL_c_locale_month_names
+                                                 87         Cnst  Gb  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x080317C8  __SEGGER_RTL_c_locale_am_pm_indicator
+                                                  7         Cnst  Gb  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x080317CF  __SEGGER_RTL_c_locale_date_time_format
+                                                 15         Cnst  Gb  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x08031CB8  advertise                           2         Cnst  Lc  shtp.o
+  0x08031CD8  __SEGGER_RTL_c_locale_day_names
+                                                 58         Cnst  Gb  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x08031D14  __SEGGER_RTL_data_utf8_period
+                                                  2         Cnst  Gb  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x0803226C  _DoInit._aInitStr                  17         Cnst  Lc  SEGGER_RTT.o (prinops_rtt_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x08032286  __SEGGER_RTL_c_locale_date_format
+                                                  9         Cnst  Gb  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x0803228F  __SEGGER_RTL_c_locale_time_format
+                                                  9         Cnst  Gb  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x08032298  __SEGGER_RTL_c_locale_abbrev_day_names
+                                                 29         Cnst  Gb  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x080322B5  __SEGGER_RTL_c_locale_abbrev_month_names
+                                                 49         Cnst  Gb  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x080322E6  __SEGGER_RTL_data_empty_string
+                                                  1         Cnst  Gb  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x080322E7  __SEGGER_RTL_ascii_ctype_mask
+                                                 13         Cnst  Lc  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x080322F8  AHBPrescTable                      16         Cnst  Gb  system_stm32l4xx.o
+  0x08032888  __SEGGER_RTL_hex_uc                16         Cnst  Gb  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x08032898  __SEGGER_RTL_hex_lc                16         Cnst  Gb  prinops.o (libc_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x080328A8  __SEGGER_RTL_ascii_ctype_map
+                                                128         Cnst  Lc  mbops.o (mbops_timeops_v7em_fpv4_sp_d16_hard_t_le_eabi_balanced.a)
+  0x0803294C  __SEGGER_init_table__            [36]      4  Cnst  Lc  [ Linker created ]
+  0x08032970  __SEGGER_init_data__             [36]      4  Cnst  Lc  [ Linker created ]
+
+Untyped symbols by name:
+
+  Symbol name                     Value        Size  Align  Type  Bd  Object File
+  -------------------------  ----------  ----------  -----  ----  --  -----------
+  __FLASH1_segment_end__     0x08040000                     ----  Gb  [ Linker created ]
+  __FLASH1_segment_size__    0x00040000                     ----  Gb  [ Linker created ]
+  __FLASH1_segment_start__   0x08000000                     ----  Gb  [ Linker created ]
+  __FLASH1_segment_used_end__
+                             0x080329BA                     ----  Gb  [ Linker created ]
+  __FLASH1_segment_used_size__
+                             0x000329BA                     ----  Gb  [ Linker created ]
+  __FLASH1_segment_used_start__
+                             0x08000000                     ----  Gb  [ Linker created ]
+  __FLASH_segment_end__      0x08040000                     ----  Gb  [ Linker created ]
+  __FLASH_segment_size__     0x00040000                     ----  Gb  [ Linker created ]
+  __FLASH_segment_start__    0x08000000                     ----  Gb  [ Linker created ]
+  __FLASH_segment_used_end__
+                             0x080329BA                     ----  Gb  [ Linker created ]
+  __FLASH_segment_used_size__
+                             0x000329BA                     ----  Gb  [ Linker created ]
+  __FLASH_segment_used_start__
+                             0x08000000                     ----  Gb  [ Linker created ]
+  __HEAPSIZE__               0x00000400                     ----  Gb  [ Linker created ]
+  __RAM1_segment_end__       0x10004000                     ----  Gb  [ Linker created ]
+  __RAM1_segment_size__      0x00004000                     ----  Gb  [ Linker created ]
+  __RAM1_segment_start__     0x10000000                     ----  Gb  [ Linker created ]
+  __RAM1_segment_used_end__  0x100011E0                     ----  Gb  [ Linker created ]
+  __RAM1_segment_used_size__
+                             0x000011E0                     ----  Gb  [ Linker created ]
+  __RAM1_segment_used_start__
+                             0x10000000                     ----  Gb  [ Linker created ]
+  __RAM2_segment_end__       0x2000C000                     ----  Gb  [ Linker created ]
+  __RAM2_segment_size__      0x0000C000                     ----  Gb  [ Linker created ]
+  __RAM2_segment_start__     0x20000000                     ----  Gb  [ Linker created ]
+  __RAM2_segment_used_end__  0x2000C000                     ----  Gb  [ Linker created ]
+  __RAM2_segment_used_size__
+                             0x00000800                     ----  Gb  [ Linker created ]
+  __RAM2_segment_used_start__
+                             0x2000B800                     ----  Gb  [ Linker created ]
+  __RAM_segment_end__        0x2000C000                     ----  Gb  [ Linker created ]
+  __RAM_segment_size__       0x1000C000                     ----  Gb  [ Linker created ]
+  __RAM_segment_start__      0x10000000                     ----  Gb  [ Linker created ]
+  __RAM_segment_used_end__   0x2000C000                     ----  Gb  [ Linker created ]
+  __RAM_segment_used_size__  0x1000C000                     ----  Gb  [ Linker created ]
+  __RAM_segment_used_start__
+                             0x10000000                     ----  Gb  [ Linker created ]
+  __STACKSIZE_PROCESS__      0x00000000                     ----  Gb  [ Linker created ]
+  __STACKSIZE__              0x00000800                     ----  Gb  [ Linker created ]
+  __ctors_end__              0x080322F8                     ----  Gb  [ Linker created ]
+  __ctors_start__            0x080322F4                     ----  Gb  [ Linker created ]
+  __stack_end__              0x2000C000                     ----  Gb  [ Linker created ]
+  __thread_pointer$          0x00000000                     ----  Gb  [ Linker created ]
+  _vectors                   0x08000000       [396]    512  Code  Gb  stm32l432xx_Vectors.o
+  _vectors_end               0x0800018C                512  Code  Lc  stm32l432xx_Vectors.o
+
+Untyped symbols by address:
+
+       Value  Symbol name                      Size  Align  Type  Bd  Object File
+  ----------  -------------------------  ----------  -----  ----  --  -----------
+  0x00000000  __thread_pointer$                             ----  Gb  [ Linker created ]
+  0x00000000  __STACKSIZE_PROCESS__                         ----  Gb  [ Linker created ]
+  0x00000400  __HEAPSIZE__                                  ----  Gb  [ Linker created ]
+  0x00000800  __STACKSIZE__                                 ----  Gb  [ Linker created ]
+  0x00000800  __RAM2_segment_used_size__
+                                                            ----  Gb  [ Linker created ]
+  0x000011E0  __RAM1_segment_used_size__
+                                                            ----  Gb  [ Linker created ]
+  0x00004000  __RAM1_segment_size__                         ----  Gb  [ Linker created ]
+  0x0000C000  __RAM2_segment_size__                         ----  Gb  [ Linker created ]
+  0x000329BA  __FLASH_segment_used_size__
+                                                            ----  Gb  [ Linker created ]
+  0x000329BA  __FLASH1_segment_used_size__
+                                                            ----  Gb  [ Linker created ]
+  0x00040000  __FLASH_segment_size__                        ----  Gb  [ Linker created ]
+  0x00040000  __FLASH1_segment_size__                       ----  Gb  [ Linker created ]
+  0x08000000  _vectors                        [396]    512  Code  Gb  stm32l432xx_Vectors.o
+  0x08000000  __FLASH_segment_used_start__
+                                                            ----  Gb  [ Linker created ]
+  0x08000000  __FLASH_segment_start__                       ----  Gb  [ Linker created ]
+  0x08000000  __FLASH1_segment_used_start__
+                                                            ----  Gb  [ Linker created ]
+  0x08000000  __FLASH1_segment_start__                      ----  Gb  [ Linker created ]
+  0x0800018C  _vectors_end                             512  Code  Lc  stm32l432xx_Vectors.o
+  0x080322F4  __ctors_start__                               ----  Gb  [ Linker created ]
+  0x080322F8  __ctors_end__                                 ----  Gb  [ Linker created ]
+  0x080329BA  __FLASH_segment_used_end__
+                                                            ----  Gb  [ Linker created ]
+  0x080329BA  __FLASH1_segment_used_end__
+                                                            ----  Gb  [ Linker created ]
+  0x08040000  __FLASH_segment_end__                         ----  Gb  [ Linker created ]
+  0x08040000  __FLASH1_segment_end__                        ----  Gb  [ Linker created ]
+  0x10000000  __RAM_segment_used_start__
+                                                            ----  Gb  [ Linker created ]
+  0x10000000  __RAM_segment_start__                         ----  Gb  [ Linker created ]
+  0x10000000  __RAM1_segment_used_start__
+                                                            ----  Gb  [ Linker created ]
+  0x10000000  __RAM1_segment_start__                        ----  Gb  [ Linker created ]
+  0x100011E0  __RAM1_segment_used_end__                     ----  Gb  [ Linker created ]
+  0x10004000  __RAM1_segment_end__                          ----  Gb  [ Linker created ]
+  0x1000C000  __RAM_segment_used_size__                     ----  Gb  [ Linker created ]
+  0x1000C000  __RAM_segment_size__                          ----  Gb  [ Linker created ]
+  0x20000000  __RAM2_segment_start__                        ----  Gb  [ Linker created ]
+  0x2000B800  __RAM2_segment_used_start__
+                                                            ----  Gb  [ Linker created ]
+  0x2000C000  __stack_end__                                 ----  Gb  [ Linker created ]
+  0x2000C000  __RAM_segment_used_end__                      ----  Gb  [ Linker created ]
+  0x2000C000  __RAM_segment_end__                           ----  Gb  [ Linker created ]
+  0x2000C000  __RAM2_segment_used_end__                     ----  Gb  [ Linker created ]
+  0x2000C000  __RAM2_segment_end__                          ----  Gb  [ Linker created ]
+
+
+***********************************************************************************************
+***                                                                                         ***
+***                                      LINK SUMMARY                                       ***
+***                                                                                         ***
+***********************************************************************************************
+
+Memory breakdown:
+
+   27 598 bytes read-only  code    + 
+  179 688 bytes read-only  data    = 207 286 bytes read-only (total)
+    6 621 bytes read-write data
+
+Region summary:
+
+  Name        Range                     Size                 Used               Unused       Alignment Loss
+  ----------  -----------------  -----------  -------------------  -------------------  -------------------
+  FLASH       08000000-0803ffff      262 144      207 290  79.07%       54 854  20.93%            0   0.00%
+  RAM1        10000000-10003fff       16 384        4 573  27.91%       11 811  72.09%            0   0.00%
+  RAM2        20000000-2000bfff       49 152        2 048   4.17%       47 104  95.83%            0   0.00%
+
+Link complete: 0 errors, 0 warnings, 0 remarks
